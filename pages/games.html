@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-SmashGames</title>
+    <link rel="stylesheet" href="/Smash_Games/css/base.css">
+    <link rel="stylesheet" href="/Smash_Games/css/table.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <div class="side-bar">
+            <aside>
+                <div class="logo">
+                    <a href="./dashboard.html">
+                        <img src="/Smash_Games/image/Artboard 2logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <a href="./dashboard.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>
+                        Dashboard
+                    </h3>
+                </a>
+                <a href="./products.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        inventory_2
+                    </span>
+                    <h3>
+                        Products
+                    </h3>
+
+                </a>
+                <a href="./games.html" class="side-link active">
+                    <span class="material-symbols-outlined">
+                        sports_esports
+                    </span>
+                    <h3>
+                        Games
+                    </h3>
+                </a>
+                <a href="http://" class="side-link">
+                    <span class="material-symbols-outlined">
+                        post
+                    </span>
+                    <h3>
+                        Posts
+                    </h3>
+                </a>
+                <a href="http://" class="side-link">
+                    <span class="material-symbols-outlined">
+                        demography
+                    </span>
+                    <h3>
+                        Permissions
+                    </h3>
+                </a>
+                <a href="http://" class="side-link">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <h3>
+                        Users
+                    </h3>
+                </a>
+                <a href="http://" class="side-link">
+                    <span class="material-symbols-outlined">
+                        orders
+                    </span>
+                    <h3>
+                        Orders
+                    </h3>
+                </a>
+            </aside>
+        </div>
+        <div class="header">
+            <nav>
+                <img src="/Smash_Games/image/avatar.jpg" alt="">
+                <div class="user-box">
+                    <p>Sean Young</p>
+                </div>
+                <a href="/Smash_Games/index.html" class="user-box" id="logout">
+                    <span class="material-symbols-outlined">
+                        logout
+                    </span>
+                    <p>Logout</p>
+                </a>
+            </nav>
+        </div>
+        <div class="content">
+            <h1 class="content-title">Games</h1>
+            <div class="status-filter">
+                <div class="title">
+                    Status Filter
+                </div>
+                <div class="filter-area">
+                    <div class="btn-group">
+                        <button class="selected">All</button>
+                        <button>Available</button>
+                        <button>Unavailable</button>
+                    </div>
+                    <form action="" method="get" class="search-box">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                        <input type="text" name="" id="" placeholder="Enter Keyword">
+                        <button>Search</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="sorting">
+                <div class="title">
+                    Sorting
+                </div>
+                <div class="sorting-area">
+                    <div class="dropdown">
+                        <div class="default-text-box">
+                            <p class="default-text">
+                                --- Select sort type ---
+                            </p>
+                            <div class="icon">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="list-chart">
+                                <p>SN increase</p>
+                                <p>SN decrease</p>
+                                <p>Price increase</p>
+                                <p>Price decrease</p>
+                            </div>
+                            <p>--- Select chart ---</p>
+                        </div>
+                    </div>
+                    <button class="clear-btn">Clear</button>
+                </div>
+            </div>
+            <div class="product-list">
+                <div class="title">
+                    Game List
+                </div>
+                <div class="table-area">
+                    <div class="action-box">
+                        <div class="control">
+                            <select name="type" class="form-control">
+                                <option value="disabled">--- Choose Action ---</option>
+                                <option value="active">Available</option>
+                                <option value="inactive">Unavailable</option>
+                                <option value="delete-all">Delete all</option>
+                            </select>
+                            <button class="apply-btn">Apply</button>
+                        </div>
+                        <button class="add-btn">+ New</button>
+                    </div>
+                    <table class="table-items">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" name="" id="" class="check-box"></th>
+                                <th>SN</th>
+                                <th>Image</th>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Upload Date</th>
+                                <th>Uploader</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- PAGE 1 -->
+                            <tr id="page-1">
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <img src="../image/littlewood cover image.jpg" alt="">
+                                </td>
+                                <td>
+                                    Littlewood
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    <button class="btn-status-table">Available</button>
+                                </td>
+                                <td>
+                                    04/08/2020
+                                </td>
+                                <td>Sean Young</td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <img src="../image/kindergaten cover.jpg" alt="">
+                                </td>
+                                <td>
+                                    Kindergarten 2
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    <button class="btn-status-table">Available</button>
+                                </td>
+                                <td>
+                                    30/07/2019
+                                </td>
+                                <td>Sean Young</td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <img src="../image/ws cover.jpg" alt="">
+                                </td>
+                                <td>
+                                    Wraithslayer
+                                </td>
+                                <td>
+                                    $4.99
+                                </td>
+                                <td>
+                                    <button class="btn-status-table">Available</button>
+                                </td>
+                                <td>
+                                    08/05/2019
+                                </td>
+                                <td>Sean Young</td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <img src="../image/kindergaten cover.jpg" alt="">
+                                </td>
+                                <td>
+                                    Kindergarten
+                                </td>
+                                <td>
+                                    $4.99
+                                </td>
+                                <td>
+                                    <button class="btn-status-table">Available</button>
+                                </td>
+                                <td>
+                                    15/06/2017
+                                </td>
+                                <td>Sean Young</td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- PAGE 2 -->
+                            <tr id="page-2">
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <img src="../image/Roguelands cover.jpg" alt="">
+                                </td>
+                                <td>
+                                    Roguelands
+                                </td>
+                                <td>
+                                    $9.99
+                                </td>
+                                <td>
+                                    <button class="btn-status-table">Available</button>
+                                </td>
+                                <td>
+                                    13/06/2016
+                                </td>
+                                <td>Sean Young</td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <img src="../image/mc cover.jpg" alt="">
+                                </td>
+                                <td>
+                                    Magicite
+                                </td>
+                                <td>
+                                    $9.99
+                                </td>
+                                <td>
+                                    <button class="btn-status-table">Available</button>
+                                </td>
+                                <td>
+                                    09/06/2014
+                                </td>
+                                <td>Sean Young</td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <img src="../image/pk cover.jpg" alt="">
+                                </td>
+                                <td>
+                                    Pixel Kingdom
+                                </td>
+                                <td>
+                                    $4.99
+                                </td>
+                                <td>
+                                    <button class="btn-status-table">Available</button>
+                                </td>
+                                <td>
+                                    22/05/2013
+                                </td>
+                                <td>Sean Young</td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pop-up">
+                        <div class="pop-up-content">
+                            <h1>
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </h1>
+                            <h1>
+                                Are you sure you want to delete?
+                            </h1>
+                            <div class="confirm-btn">
+                                <button id="yes">Yes</button>
+                                <button id="no">No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-previous">
+                                <button class="page-link"><- Previous</button>
+                            </li>
+                            <li class="page-item active">
+                                <button class="page-link">1</button>
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link">2</button>
+                            </li>
+                            <li class="page-next">
+                                <button class="page-link">Next -></button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/products.js"></script>
+</body>
+
+</html>

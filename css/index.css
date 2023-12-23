@@ -1,0 +1,96 @@
+body
+{
+    font-family: Niramit;
+    background-color: #211544;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 20px;
+}
+img
+{
+    width: 600px;
+    height: auto;
+}
+.logo
+{
+    text-align: center;
+    margin-bottom: 5vh;
+}
+label
+{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.login-box
+{
+    color: #FDF1DA;
+    width: 500px;
+    height: 500px;
+    /* border:#62b668 solid 8px ; */
+    border:#FDF1DA solid 8px ;
+    border-radius: 20px;
+    background-color: #211544;
+    text-align: center;
+}
+.login-box .title
+{
+    margin-bottom: 80px;
+    padding-top: 20px;
+}
+.login-box .login-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input
+{
+    border-radius: 18px;
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+}
+#password-input
+{
+    margin-bottom: 30px;
+}
+.group-btn
+{
+}
+.u-btn, .p-btn
+{
+    background-color: #FDF1DA;
+    color: #211544;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.u-btn
+{
+    background-color:#FDF1DA;
+    color: #211544;
+    transition: all 0.2s ease;
+}
+.u-btn:hover
+{
+    background-color:#62b668;
+    color: #211544;
+}
+.p-btn
+{
+    background-color: #594E7C;
+    color: #FDF1DA;
+    transition: all 0.2s ease;
+}
+.p-btn:hover
+{
+    background-color:#62b668;
+    color: #211544;
+}
+
+/* #62b668 */

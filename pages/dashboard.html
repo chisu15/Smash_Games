@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-SmashGames</title>
+    <link rel="stylesheet" href="/Smash_Games/css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="side-bar">
+            <aside>
+                <div class="logo">
+                    <a href="./dashboard.html">
+                        <img src="/Smash_Games/image/Artboard 2logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <a href="./dashboard.html" class="side-link active">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>
+                        Dashboard
+                    </h3>
+                </a>
+                <a href="./products.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        inventory_2
+                    </span>
+                    <h3>
+                        Products
+                    </h3>
+
+                </a>
+                <a href="./games.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        sports_esports
+                    </span>
+                    <h3>
+                        Games
+                    </h3>
+                </a>
+                <a href="http://" class="side-link">
+                    <span class="material-symbols-outlined">
+                        post
+                    </span>
+                    <h3>
+                        Posts
+                    </h3>
+                </a>
+                <a href="http://" class="side-link">
+                    <span class="material-symbols-outlined">
+                        demography
+                    </span>
+                    <h3>
+                        Permissions
+                    </h3>
+                </a>
+                <a href="http://" class="side-link">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <h3>
+                        Users
+                    </h3>
+                </a>
+                <a href="http://" class="side-link">
+                    <span class="material-symbols-outlined">
+                        orders
+                    </span>
+                    <h3>
+                        Orders
+                    </h3>
+                </a>
+            </aside>
+        </div>
+        <div class="header">
+            <nav>
+                <img src="/Smash_Games/image/avatar.jpg" alt="">
+                <div class="user-box">
+                    <p>Sean Young</p>
+                </div>
+                <a href="/Smash_Games/index.html" class="user-box" id="logout">
+                    <span class="material-symbols-outlined">
+                        logout
+                    </span>
+                    <p>Logout</p>
+                </a>
+            </nav>
+        </div>
+        <div class="content">
+            <h1 class="content-title">DASHBOARD</h1>
+            <div class="dashboard">
+                <div class="box-info" id="visited">
+                    <span class="material-symbols-outlined">
+                        query_stats
+                    </span>
+                    <div class="flex-container">
+                        <h1>10258033</h1>
+                        <h3>Total Visits</h3>
+                        <p>
+                            +5% since last month
+                        </p>
+                    </div>
+                </div>
+                <div class="box-info" id="product-revenue">
+                    <span class="material-symbols-outlined">
+                        inventory
+                    </span>
+                    <div class="flex-container">
+                        <h1>$2305</h1>
+                        <h3>Products Revenue</h3>
+                        <p>
+                            +5% since last month
+                        </p>
+                    </div>
+                </div>
+                <div class="box-info" id="games-revenue">
+                    <span class="material-symbols-outlined">
+                        download
+                    </span>
+                    <div class="flex-container">
+                        <h1>$58033</h1>
+                        <h3>Games Revenue</h3>
+                        <p>
+                            +5% since last month
+                        </p>
+                    </div>
+                </div>
+                <div class="box-info" id="posted">
+                    <span class="material-symbols-outlined">
+                        post_add
+                    </span>
+                    <div class="flex-container">
+                        <h1>5</h1>
+                        <h3>News Posted</h3>
+                        <p>
+                            +5% since last month
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-rank">
+                <div class="chart">
+                    <div class="dropdown">
+                        <div class="default-text-box">
+                            <p class="default-text">
+                                --- Select chart ---
+                            </p>
+                            <div class="icon">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="list-chart">
+                                <p>Visited chart</p>
+                                <p>Product revenue chart</p>
+                                <p>Games revenue chart</p>
+                            </div>
+                            <p>--- Select chart ---</p>
+                        </div>
+                    </div>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="rank">
+                    <h1>Rank User</h1>
+                    <div class="rank-board">
+                        <div class="top-user">
+                            <img src="../image/Anh.jpg" alt="" class="top-user-avt">
+                            <h3 class="top-user-name">Én Small</h3>
+                            <h3 class="top-user-cash">$102485</h3>
+                        </div>
+                        <div class="top-user">
+                            <img src="../image/Dung.jpg" alt="" class="top-user-avt">
+                            <h3 class="top-user-name">Jondo</h3>
+                            <h3 class="top-user-cash">$1245</h3>
+                        </div>
+                        <div class="top-user">
+                            <img src="../image/Minh.jpg" alt="" class="top-user-avt">
+                            <h3 class="top-user-name">GPT JunYun</h3>
+                            <h3 class="top-user-cash">$24</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="statistic">
+                <h1 class="statistic-title">Statistic of the Games</h1>
+                <div class="statistic-total">
+                    <div class="statistic-box">
+                        <div class="top-game">
+                            <h3 class="top-number"></h3>
+                            <img src="../image/kindergaten cover.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Kindergarten</h3>
+                            <h3 class="top-game-view">6750 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-number"></h3>
+                            <img src="../image/mc cover.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Magicite</h3>
+                            <h3 class="top-game-view">5776 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-number"></h3>
+                            <img src="../image/littlewood cover image.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Littlewood</h3>
+                            <h3 class="top-game-view">5610 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-number"></h3>
+                            <img src="../image/Kindergarten 2.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Kindergarten 2</h3>
+                            <h3 class="top-game-view">3690 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-number"></h3>
+                            <img src="../image/Roguelands cover.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Roguelands</h3>
+                            <h3 class="top-game-view">2910 views</h3>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="total-box" id="downloads">
+                            <span class="material-symbols-outlined">
+                                download_for_offline
+                            </span>
+                            <div class="total-info">
+                                <h3>256</h3>
+                                <p>Total Downloads</p>
+                            </div>
+                        </div>
+                        <div class="total-box" id="reports">
+                            <span class="material-symbols-outlined">
+                                rate_review
+                            </span>
+                            <div class="total-info">
+                                <h3>256</h3>
+                                <p>Total Downloads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="statistic">
+                <h1 class="statistic-title">Statistic of the Products</h1>
+                <div class="statistic-total">
+                    <div class="statistic-box">
+                        <div class="top-game">
+                            <h3 class="top-product-number"></h3>
+                            <img src="../image/kindergaten cover.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Kindergarten</h3>
+                            <h3 class="top-game-view">6750 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-product-number"></h3>
+                            <img src="../image/mc cover.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Magicite</h3>
+                            <h3 class="top-game-view">5776 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-product-number"></h3>
+                            <img src="../image/littlewood cover image.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Littlewood</h3>
+                            <h3 class="top-game-view">5610 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-product-number"></h3>
+                            <img src="../image/Kindergarten 2.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Kindergarten 2</h3>
+                            <h3 class="top-game-view">3690 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-product-number"></h3>
+                            <img src="../image/Roguelands cover.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Roguelands</h3>
+                            <h3 class="top-game-view">2910 views</h3>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="total-box" id="downloads">
+                            <span class="material-symbols-outlined">
+                                download_for_offline
+                            </span>
+                            <div class="total-info">
+                                <h3>256</h3>
+                                <p>Total Downloads</p>
+                            </div>
+                        </div>
+                        <div class="total-box" id="reports">
+                            <span class="material-symbols-outlined">
+                                rate_review
+                            </span>
+                            <div class="total-info">
+                                <h3>256</h3>
+                                <p>Total Reports</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="statistic">
+                <h1 class="statistic-title">Most Viewed Posts</h1>
+                <div class="statistic-total">
+                    <div class="statistic-box">
+                        <div class="top-game">
+                            <h3 class="top-number"></h3>
+                            <img src="../image/kindergaten cover.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Kindergarten</h3>
+                            <h3 class="top-game-view">6750 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-number"></h3>
+                            <img src="../image/mc cover.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Magicite</h3>
+                            <h3 class="top-game-view">5776 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-number"></h3>
+                            <img src="../image/littlewood cover image.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Littlewood</h3>
+                            <h3 class="top-game-view">5610 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-number"></h3>
+                            <img src="../image/Kindergarten 2.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Kindergarten 2</h3>
+                            <h3 class="top-game-view">3690 views</h3>
+                        </div>
+                        <div class="top-game">
+                            <h3 class="top-number"></h3>
+                            <img src="../image/Roguelands cover.jpg" alt="" class="top-game-avt">
+                            <h3 class="top-game-name">Roguelands</h3>
+                            <h3 class="top-game-view">2910 views</h3>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="total-box" id="downloads">
+                            <span class="material-symbols-outlined">
+                                download_for_offline
+                            </span>
+                            <div class="total-info">
+                                <h3>256</h3>
+                                <p>Total Downloads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
