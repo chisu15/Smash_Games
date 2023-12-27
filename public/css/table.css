@@ -341,11 +341,19 @@ input[type="checkbox"]
     object-fit: cover;
     border-radius: 20px;
 }
+.table-items tbody a
+{
+    text-decoration: none;
+}
+.table-items tbody p
+{
+    color: #211544;
+}
 .table-items tbody .btn-status-table
 {
     width: 110px;
     height: 38px;
-    background-color: #62b668;
+    background-color: #B4E37A;
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;

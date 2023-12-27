@@ -73,6 +73,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		const statusBtn = items.querySelectorAll(".btn-status-table");
 		const deleteBtn = items.querySelectorAll(".btn-delete");
 
+
 		statusBtn.forEach((button) => {
 			button.addEventListener("click", () => {
 				let textBtn =
@@ -81,7 +82,7 @@ window.addEventListener("DOMContentLoaded", function () {
 						: "Unavailable";
 
 				button.style.background =
-					button.style.background === "red" ? "#62b668" : "red";
+					button.style.background === "red" ? "#B4E37A" : "red";
 				button.innerHTML = textBtn;
 			});
 		});
@@ -208,4 +209,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 		currentPage = page;
 	}
+
+	// ADD LINK TO DETAILS
+
 });

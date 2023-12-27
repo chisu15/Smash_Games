@@ -35,12 +35,12 @@ aside
 aside .logo
 {
     width: 500px;
-    height: 125px;
+    height: fit-content;
     margin-top: 20px;
     /* margin-bottom: 20px;
     padding-left:80px;
     border: #FDF1DA solid; */
-
+    margin-bottom: 40px;
 }
 aside .side-link
 {
@@ -173,7 +173,10 @@ aside .side-link.active::before
 {
     height: fit-content;
     padding-inline: 30%;
-    margin-top: -3px;
+    margin-left: 30px;
+    margin-top: -1px;
     margin-bottom: 0;
     border-bottom: #211544 solid 4px;
+    /* border: #211544 solid;  */
+    text-align: center;
 }
