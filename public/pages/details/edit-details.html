@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin-SmashGames</title>
-    <link rel="stylesheet" href="../../css/details.css">
+    <link rel="stylesheet" href="../../css/edit-details.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,17 +103,22 @@
                     <a href="../details/product-details.html" class="current">
                         Item
                     </a>
+                    <div>></div>
+                    <a href="../details/edit-details.html" class="current">
+                        Edit
+                    </a>
                 </div>
             </h1>
             <div class="img-name-item">
-                <a href="./edit-details.html" class="edit-btn">
+                <!-- <a href="" class="edit-btn">
                     <button>
                         Edit
                     </button>
-                </a>
-                <img src="../../image/Anh.jpg" alt="">
-                <h1>Đặng Ngọc Ánh</h1>
-                <div class="sub">
+                </a> -->
+                <img src="../../image/Anh.jpg" alt="" class="cover-img">
+                <h1 class="change-img">Change cover image</h1>
+                <input type="file" name="" id="" style="display: none;" class="chooseFile">
+                <!-- <div class="sub">
                     <div class="sub-user">
                         <span class="material-symbols-outlined">
                             person
@@ -133,7 +138,7 @@
                         </span>
                         <div>2534</div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="details-box">
                 <div class="details-title">
@@ -201,7 +206,7 @@
                             <th>
                                 Category:
                             </th>
-                            <td colspan="6">
+                            <td colspan="5">
 
                             </td>
                         </tr>
@@ -210,6 +215,7 @@
                                 Discount:
                             </th>
                             <td>Currently no</td>
+                            <td></td>
                             <th>From:</th>
                             <td></td>
                             <th>To:</th>
@@ -256,158 +262,37 @@
                     </p>
                 </div>
                 <div class="img-box-content">
-                    <div>
-                        <img src="../../image/Dung.jpg" alt="">
-                        <img src="../../image/Minh.jpg" alt="">
-                        <img src="../../image/Anh.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="review-box">
-                <div class="review-title">
-                    <h2 id="review">Review</h2>
-                    <h2 id="report">Reports</h2>
-                    <div class="rating">
-                        <h4 id="rate_report"> Average rating:</h4>
-                        <div class="stars">
-                            <p>4.0</p>
-                            <img src="../../image/star_fill.png" alt="">
-                            <img src="../../image/star_fill.png" alt="">
-                            <img src="../../image/star_fill.png" alt="">
-                            <img src="../../image/star_fill.png" alt="">
-                            <img src="../../image/star.png" alt="">
+                    <div class="grp-img">
+                        <div class="img-close">
+                            <img src="../../image/Dung.jpg" alt="">
+                            <span class="material-symbols-outlined">
+                                cancel
+                            </span>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Minh.jpg" alt="">
+                            <span class="material-symbols-outlined">
+                                cancel
+                            </span>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Anh.jpg" alt="">
+                            <span class="material-symbols-outlined">
+                                cancel
+                            </span>
                         </div>
                     </div>
-                </div>
-                <div class="feature">
-                    <p>Sort by: </p>
-                    <button id="rate">Ratings</button>
-                    <button id="time">Times</button>
-                </div>
-                <div class="review-content">
-                    <div id="rev">
-                        <div class="c1-review">
-                            <div class="cmt">
-                                <div class="cmt-avt">
-                                    <span class="material-symbols-outlined">
-                                        person
-                                    </span>
-                                </div>
-                                <div class="cmt-text">
-                                    <div class="user-name">
-                                        <h4><b>user synonymous 1</b></h4>
-                                        <p>2 days ago</p>
-                                    </div>
-                                    <div class="cmt-main">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mi sagittis,
-                                        maximus justo non, posuere elit. Nam tincidunt vitae massa nec egestas. Praesent
-                                        semper blandit nunc eget
-                                        vulputate. Pellentesque pharetra maximus sapien, sagittis malesuada nisl congue
-                                        eu. Vestibulum nec neque consectetur, molestie neque in, pharetra sem.
-                                        Pellentesque est urna, venenatis
-                                        at purus quis, aliquet vulputate justo. Maecenas id maximus nisl.
-                                    </div>
-                                    <div class="stars">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cmt">
-                                <div class="cmt-avt">
-                                    <span class="material-symbols-outlined">
-                                        person
-                                    </span>
-                                </div>
-                                <div class="cmt-text">
-                                    <div class="user-name">
-                                        <h4><b>user synonymous 1</b></h4>
-                                        <p>2 days ago</p>
-                                    </div>
-                                    <div class="cmt-main">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mi sagittis,
-                                        maximus justo non, posuere elit. Nam tincidunt vitae massa nec egestas. Praesent
-                                        semper blandit nunc eget
-                                        vulputate. Pellentesque pharetra maximus sapien, sagittis malesuada nisl congue
-                                        eu. Vestibulum nec neque consectetur, molestie neque in, pharetra sem.
-                                        Pellentesque est urna, venenatis
-                                        at purus quis, aliquet vulputate justo. Maecenas id maximus nisl.
-                                    </div>
-                                    <div class="stars">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cmt">
-                                <div class="cmt-avt">
-                                    <span class="material-symbols-outlined">
-                                        person
-                                    </span>
-                                </div>
-                                <div class="cmt-text">
-                                    <div class="user-name">
-                                        <h4><b>user synonymous 1</b></h4>
-                                        <p>2 days ago</p>
-                                    </div>
-                                    <div class="cmt-main">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mi sagittis,
-                                        maximus justo non, posuere elit. Nam tincidunt vitae massa nec egestas. Praesent
-                                        semper blandit nunc eget
-                                        vulputate. Pellentesque pharetra maximus sapien, sagittis malesuada nisl congue
-                                        eu. Vestibulum nec neque consectetur, molestie neque in, pharetra sem.
-                                        Pellentesque est urna, venenatis
-                                        at purus quis, aliquet vulputate justo. Maecenas id maximus nisl.
-                                    </div>
-                                    <div class="stars">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star_fill.png" alt="">
-                                        <img src="../../image/star.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="add-img">
+                         <h1>+</h1>
+                        <p>Add a new image</p>
                     </div>
-                    <div id="rep">
-                        <div class="c2-report">
-                            <div class="cmt">
-                                <div class="cmt-avt">
-                                    <span class="material-symbols-outlined">
-                                        person
-                                    </span>
-                                </div>
-                                <div class="cmt-text">
-                                    <div class="user-name">
-                                        <h4><b>user synonymous 1</b></h4>
-                                        <p>2 days ago</p>
-                                    </div>
-                                    <div class="cmt-main">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mi sagittis,
-                                        maximus justo non, posuere elit. Nam tincidunt vitae massa nec egestas. Praesent
-                                        semper blandit nunc eget
-                                        vulputate. Pellentesque pharetra maximus sapien, sagittis malesuada nisl congue
-                                        eu. Vestibulum nec neque consectetur, molestie neque in, pharetra sem.
-                                        Pellentesque est urna, venenatis
-                                        at purus quis, aliquet vulputate justo. Maecenas id maximus nisl.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="../../js/details.js"></script>
+    <script src="../../js/edit-details.js"></script>
 </body>
 
 </html>

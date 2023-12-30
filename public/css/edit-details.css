@@ -209,11 +209,17 @@ aside .side-link.active::before
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    /* gap: 30px; */
 }
-.img-name-item h1
+.img-name-item .change-img
 {
     margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.img-name-item .change-img:hover
+{
+    color: #B197FC;
 }
 .img-name-item .edit-btn
 {
@@ -247,6 +253,7 @@ aside .side-link.active::before
     border-radius: 60px;
     box-shadow: #211544 0px 4px 11px;
 }
+
 .sub
 {
     color: #211544;
@@ -285,16 +292,18 @@ aside .side-link.active::before
 
 .details-box, .description-box, .img-box, .review-box
 {
-    border: #211544 solid 5px;
-    border-radius: 20px;
+    /* border: #211544 solid 5px; */
     align-items: flex-start;
-    box-shadow: #211544 0 15px;
 }
 .details-box h2, .description-box h2, .img-box-title h2, .review-title h2, .feature
 {
     padding: 10px;
     margin: 0;
     padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    background-color: #211544;
 }
 .table-details
 {
@@ -303,8 +312,12 @@ aside .side-link.active::before
     display: table;
     text-align: left;
     padding-left: 70px;
-    padding-right: 70px;
+    padding-top: 20px;
+    /* padding-right: 70px; */
     padding-bottom: 30px;
+    border: #211544 solid 5px;
+    border-radius: 0 20px 20px 20px;
+    box-shadow: #211544 0 15px;
     /* border: #211544 solid; */
 }
 .btn-status-table
@@ -336,8 +349,8 @@ aside .side-link.active::before
     gap: 100px;
     font-weight: bold;
     align-items: center;
-    border-bottom: #211544 solid 3px;
-    box-shadow: #211544 0px 5px;
+    /* border-bottom: #211544 solid 3px;
+    box-shadow: #211544 0px 5px; */
 }
 .review-box
 {
@@ -346,6 +359,7 @@ aside .side-link.active::before
 }
 #title-1, #title-2
 {
+    color: white;
     cursor: pointer;
     /* border: #211544 solid;  */
 }
@@ -358,10 +372,13 @@ aside .side-link.active::before
     width: fit-content;
     padding-left: 50px;
     padding-right: 30px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     padding-bottom: 30px;
-    /* border: #211544 solid; */
+    border: #211544 solid 5px;
+    border-radius: 0 20px 20px 20px;
+    box-shadow: #211544 0 15px;
 }
 #content-1, #content-2
 {
@@ -373,9 +390,11 @@ aside .side-link.active::before
 }
 .img-box-content
 {
-    display: block;
+    width: calc(100vw - 540px);;
+    display: flex;
+    gap: 30px;
+    align-items: center;
     margin: auto;
-    margin-top: 15px;
     margin-bottom: 30px;
 }
 .img-box-content img
@@ -384,8 +403,55 @@ aside .side-link.active::before
     height: 266px;
     object-fit: cover;
     border-radius: 22px;
-    margin-inline: 10px;
+    /* margin-inline: 10px; */
 }
+.grp-img
+{
+    display: flex;
+    gap: 30px;
+}
+.img-close
+{
+    /* border: #211544 solid; */
+    width: fit-content;
+}
+.img-close span{
+    position: absolute;
+    color: black;
+    border-radius: 50%;
+    margin-left: -15px;
+    margin-top: -10px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+.add-img
+{
+    width: 30%;
+    border: #211544 solid 2px;
+    border-style: dashed;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.add-img h1
+{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 1.2;
+    border-radius: 50%;
+    border: #211544 solid 2px;
+    /* background-repeat: ; */
+}
+
+
+
 .review-title
 {
     border-bottom: #211544 solid 3px;

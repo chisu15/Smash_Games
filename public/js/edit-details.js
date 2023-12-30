@@ -8,11 +8,11 @@ window.addEventListener("DOMContentLoaded", function () {
 	additionalInfo.addEventListener("click", () => {
 		if (content1.style.display != "none") {
 			description.style.color =
-				description.style.color === "#7F796D" ? "#211544" : "#7F796D";
+				description.style.color === "#7F796D" ? "white" : "#7F796D";
 			additionalInfo.style.color =
-				additionalInfo.style.color === "#211544"
+				additionalInfo.style.color === "white"
 					? "#7F796D"
-					: "#211544";
+					: "white";
 			content2.style.display =
 				content2.style.display === "block" ? "none" : "block";
 			content1.style.display =
@@ -22,10 +22,10 @@ window.addEventListener("DOMContentLoaded", function () {
 	description.addEventListener("click", () => {
 		if (content2.style.display != "none") {
 			description.style.color =
-				description.style.color === "#211544" ? "#7F796D" : "#211544";
+				description.style.color === "white" ? "#7F796D" : "white";
 			additionalInfo.style.color =
 				additionalInfo.style.color === "#7F796D"
-					? "#211544"
+					? "white"
 					: "#7F796D";
 			content2.style.display =
 				content2.style.display === "block" ? "none" : "block";
