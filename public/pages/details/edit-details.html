@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/gxw6fdjpq39otp8y8bpgzhrcucsggc9xbotnyyzowmcw0n3u/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
 </head>
 
 <body>
@@ -150,13 +153,13 @@
                             <th>
                                 Name:
                             </th>
-                            <td colspan="2">
-                                Đặng Ngọc Ánh
+                            <td colspan="1">
+                                <input type="text" value="Đặng Ngọc Ánh">
                             </td>
                             <th>
                                 Status:
                             </th>
-                            <td colspan="2">
+                            <td colspan="1">
                                 <button class="btn-status-table">Available</button>
                             </td>
                         </tr>
@@ -164,62 +167,71 @@
                             <th>
                                 Game Code:
                             </th>
-                            <td colspan="2">
-                                #123456789
+                            <td colspan="1">
+                                <input type="text" value="#123456789">
                             </td>
                             <th>
                                 Price:
                             </th>
-                            <td colspan="2">
-                                $20
+                            <td colspan="1">
+                                <input type="text" value="$20">
                             </td>
                         </tr>
                         <tr>
                             <th>
                                 Upload date:
                             </th>
-                            <td colspan="2">
-                                10/10/2023
+                            <td colspan="1">
+                                <input type="date" value="2023-10-10">
                             </td>
                             <th>
                                 Total Visits:
                             </th>
-                            <td colspan="2">
-                                2534
+                            <td colspan="1">
+                                <input type="text" value="2534">
+
                             </td>
                         </tr>
                         <tr>
                             <th>
                                 Uploader:
                             </th>
-                            <td colspan="2">
-                                Sean Young
+                            <td colspan="1">
+                                <input type="text" value="Sean Young">
+
                             </td>
                             <th>
                                 Revenue:
                             </th>
-                            <td colspan="2">
-                                $240
+                            <td colspan="1">
+                                <input type="text" value="$240">
                             </td>
                         </tr>
                         <tr>
                             <th>
                                 Category:
                             </th>
-                            <td colspan="5">
-
+                            <td colspan="3">
+                                <input type="text" value="">
                             </td>
                         </tr>
                         <tr>
                             <th>
                                 Discount:
                             </th>
-                            <td>Currently no</td>
-                            <td></td>
+                            <td>
+                                <input type="text" value="Currently no">
+                            </td>
+                        </tr>
+                        <tr>
                             <th>From:</th>
-                            <td></td>
+                            <td colspan="1">
+                                <input type="date" value="">
+                            </td>
                             <th>To:</th>
-                            <td></td>
+                            <td colspan="1">
+                                <input type="date" value="">
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -230,26 +242,20 @@
                     <h2 id="title-2">Additional Information</h2>
                 </div>
                 <div class="description-content">
-                    <p id="content-1">
+                    <textarea name="" id="content-1" cols="1" rows="8">
                         1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the industry's standard
-                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                        to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into electronic
-                        typesetting, remaining essentially
-                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                        Ipsum passages
-                    </p>
-                    <p id="content-2">
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                    to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages
+                    </textarea>
+                    <textarea name=""id="content-2" cols="1" rows="8">
                         2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the industry's standard
-                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                        to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into electronic
-                        typesetting, remaining essentially
-                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                        Ipsum passages
-                    </p>
+                    been the industry's standar ddummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                    to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages
+                    </textarea>
                 </div>
             </div>
             <div class="img-box">
@@ -265,29 +271,50 @@
                     <div class="grp-img">
                         <div class="img-close">
                             <img src="../../image/Dung.jpg" alt="">
-                            <span class="material-symbols-outlined">
-                                cancel
-                            </span>
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
                         </div>
                         <div class="img-close">
                             <img src="../../image/Minh.jpg" alt="">
-                            <span class="material-symbols-outlined">
-                                cancel
-                            </span>
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
                         </div>
                         <div class="img-close">
                             <img src="../../image/Anh.jpg" alt="">
-                            <span class="material-symbols-outlined">
-                                cancel
-                            </span>
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div class="add-img">
-                         <h1>+</h1>
+                        <h1>+</h1>
                         <p>Add a new image</p>
+                        <input type="file" class="chooseFile-2">
                     </div>
 
                 </div>
+            </div>
+            <div class="save-discard-btn">
+                <a href="./product-details.html">
+                    <button id="save-btn"><a href="product-details.html">
+                        SAVE CHANGES
+                    </a></button>
+                </a>
+                <a href="./edit-details.html">
+                    <button id="discard-btn">
+                        <a href="./edit-details.html">
+                            DISCARD ALL
+                        </a> 
+                    </button>
+                </a>
             </div>
         </div>
     </div>

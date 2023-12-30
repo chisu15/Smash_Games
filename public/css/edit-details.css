@@ -168,7 +168,7 @@ aside .side-link.active::before
     top: 107px;
     left: 241px;
     height: auto;
-    width: calc(100vw - 250px);
+    width: calc(100vw - 260px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,7 +205,7 @@ aside .side-link.active::before
 }
 .img-name-item, .details-box, .description-box, .img-box, .review-box
 {
-    width: calc(100vw - 450px);;
+    width: calc(100vw - 450px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,7 +243,7 @@ aside .side-link.active::before
 .edit-btn button:hover
 {
     background-color: #B4E37A ;
-    box-shadow: #211544 0 1px;
+    box-shadow: #211544 0 1px 0px 1px;
 }
 .img-name-item img
 {
@@ -340,7 +340,18 @@ aside .side-link.active::before
     /* border: #211544 solid;  */
     width: 150px;
 }
-
+input[type="text"], input[type="date"]
+{
+    color: black;
+    border: #211544 solid 2px;
+    border-radius: 10px;
+    font-family: niramit;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 30px;
+    padding-left: 15px;
+    background-color: #FDF1DA;
+}
 /* DESCRIPTION-BOX AND IMG-BOX */
 .description-title, .img-box-title, .review-title, .details-title
 {
@@ -380,9 +391,23 @@ aside .side-link.active::before
     border-radius: 0 20px 20px 20px;
     box-shadow: #211544 0 15px;
 }
+.description-content
+{
+    width: calc(100vw - 540px);
+}
 #content-1, #content-2
 {
+    
     display: block;
+    border: #211544 solid 2px;
+    border-radius: 10px;
+    font-family: niramit;
+    font-size: 16px;
+    font-weight: 600;
+    resize: none;
+    padding-left: 15px;
+    margin: 10px;
+    background-color: #FDF1DA;
 }
 #content-2
 {
@@ -414,22 +439,40 @@ aside .side-link.active::before
 {
     /* border: #211544 solid; */
     width: fit-content;
+    position: relative;
+}
+.img-close .close-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-top: -3px;
+    margin-right: -10px;
 }
 .img-close span{
-    position: absolute;
     color: black;
-    border-radius: 50%;
-    margin-left: -15px;
-    margin-top: -10px;
-    background-color: white;
+    padding: 0;
     font-weight: bold;
     font-size: 30px;
-    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.img-close span:hover
+{
+    color: #B4E37A;
 }
 .add-img
 {
-    width: 30%;
-    border: #211544 solid 2px;
+    width: 35%;
+    border: #211544 solid 3px;
     border-style: dashed;
     border-radius: 20px;
     display: flex;
@@ -439,17 +482,27 @@ aside .side-link.active::before
     padding-bottom: 20px;
     cursor: pointer;
 }
+/* .add-img:hover
+{
+    color: #17793D;
+    border: #17793D solid 3px;
+    border-style: dashed;
+} */
 .add-img h1
 {
     width: 50px;
     height: 50px;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.1;
     border-radius: 50%;
-    border: #211544 solid 2px;
+    border: #211544 solid 3px;
+    border-style: dashed;
     /* background-repeat: ; */
 }
-
+.chooseFile-2
+{
+    display: none;
+}
 
 
 .review-title
@@ -462,7 +515,6 @@ aside .side-link.active::before
     text-align: right;
     display: flex;
     align-items: center;
-
     gap: 10px;
 }
 .stars
@@ -564,4 +616,51 @@ aside .side-link.active::before
 .review-box
 {
     height: 1250px;
+}
+.save-discard-btn
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 82px;
+    padding-bottom: 50px;
+}
+a{
+    text-decoration: none;
+    color: #211544;
+}
+button
+{
+    font-family: niramit; 
+
+}
+#save-btn, #discard-btn
+{
+    width: 25%;
+    font-size: 32px;
+    font-weight: bold;
+    border: #211544 solid 3px;
+    border-radius:  20px;
+    box-shadow: #211544 0px 10px;
+    transition: all 0.2s ease;
+}
+#save-btn{
+    background-color: #B4E37A;
+
+}
+#save-btn:hover{
+    background-color: #9ec66d;
+    box-shadow: #211544 0px 3px 0px 3px;
+}
+#discard-btn{
+    background-color: #EBD8B3;
+}
+#discard-btn:hover{
+    background-color: #c9b998;
+    box-shadow: #211544 0px 3px 0px 3px;
+}
+*
+{
+    font-family: niramit;
 }

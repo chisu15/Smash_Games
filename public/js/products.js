@@ -70,8 +70,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	tableBody.forEach((items, index) => {
 		const sn = items.querySelectorAll(".sn");
-		const statusBtn = items.querySelectorAll(".btn-status-table");
 		const deleteBtn = items.querySelectorAll(".btn-delete");
+		const statusBtn = items.querySelectorAll(".btn-status-table");
 
 
 		statusBtn.forEach((button) => {

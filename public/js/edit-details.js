@@ -79,3 +79,50 @@ changeImg.addEventListener("click", ()=>{
         }
 	})
 })
+
+const changeStatus = document.querySelector(".btn-status-table");
+changeStatus.addEventListener("click", ()=>
+{
+    // if( changeStatus.innerHTML == "Unavalable")
+    // {
+    //     changeStatus.style.backgroundColor = "#FF0000";
+    // }
+    // else
+    // {
+    //     changeStatus.style.backgroundColor = "#B4E37A";
+    // }
+    let textBtn =
+    changeStatus.innerHTML === "Unavailable"
+        ? "Available"
+        : "Unavailable";
+    changeStatus.style.background = changeStatus.style.background === "red" ? "#B4E37A":"red";
+    changeStatus.innerHTML = textBtn;
+})
+
+
+
+
+
+
+const borderAddImg = document.querySelector(".add-img h1");
+const addImg = document.querySelector(".add-img")
+const chooseFile2 = document.querySelector(".chooseFile-2");
+addImg.addEventListener("mouseover", ()=>{
+    addImg.style.color = "#17793D";
+    addImg.style.border = "#17793D solid 3px";
+    addImg.style.borderStyle = "dashed";
+    borderAddImg.style.color ="#17793D";
+    borderAddImg.style.border = "#17793D solid 3px";
+    borderAddImg.style.borderStyle = "dashed";
+})
+addImg.addEventListener("mouseout", ()=>{
+    addImg.style.color = "#211544";
+    addImg.style.border = "#211544 solid 3px";
+    addImg.style.borderStyle = "dashed";
+    borderAddImg.style.color ="#211544";
+    borderAddImg.style.border = "#211544 solid 3px";
+    borderAddImg.style.borderStyle = "dashed";
+})
+addImg.addEventListener("click", ()=>{
+    chooseFile2.click();
+})

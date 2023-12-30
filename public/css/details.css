@@ -237,7 +237,7 @@ aside .side-link.active::before
 .edit-btn button:hover
 {
     background-color: #B4E37A ;
-    box-shadow: #211544 0 1px;
+    box-shadow: #211544 0 2px 0px 2px;
 }
 .img-name-item img
 {
@@ -424,12 +424,12 @@ aside .side-link.active::before
     font-size: 16px;
     font-weight: bold;
     font-family: niramit;
+    transition: all 0.2s ease;
 }
 .feature button:hover
 {
     background-color: #B4E37A ;
-    box-shadow: #211544 0 1px;
-    transition: all 0.2s ease;
+    box-shadow: #211544 0 2px 0px 2px;
 }
 #review, #report
 {
