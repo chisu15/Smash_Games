@@ -62,6 +62,8 @@ window.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 });
+const borderImg = document.querySelector(".border-img");
+const inImg = document.querySelector(".in-img")
 const changeImg = document.querySelector(".change-img");
 const inputFile = document.querySelector(".chooseFile");
 const coverImg = document.querySelector(".cover-img");
@@ -76,6 +78,24 @@ changeImg.addEventListener("click", ()=>{
                 coverImg.src = e.target.result;
             };
             reader.readAsDataURL(input.files[0]);
+			inImg.innerHTML = "";
+			borderImg.style.borderStyle = "none";
+        }
+	})
+})
+borderImg.addEventListener("click", ()=>{
+	inputFile.click();
+	inputFile.addEventListener("change", ()=>{
+		var input = event.target;
+		if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                coverImg.src = e.target.result;
+            };
+            reader.readAsDataURL(input.files[0]);
+			inImg.innerHTML = "";
+			borderImg.style.borderStyle = "none";
         }
 	})
 })
@@ -126,3 +146,19 @@ addImg.addEventListener("mouseout", ()=>{
 addImg.addEventListener("click", ()=>{
     chooseFile2.click();
 })
+
+// coverImg.addEventListener("mouseover", ()=>{
+//     coverImg.style.color = "#17793D";
+
+//     inImg.style.color ="#17793D";
+
+// })
+// coverImg.addEventListener("mouseout", ()=>{
+//     coverImg.style.color = "#211544";
+
+//     inImg.style.color ="#211544";
+
+// })
+// coverImg.addEventListener("click", ()=>{
+//     chooseFile2.click();
+// })

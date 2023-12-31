@@ -6,7 +6,9 @@
 #B4E37A
 #ff5c5c
 */
-
+a{
+    color: #211544;
+}
 .status-filter, .sorting, .product-list, .page
 {
     /* background-color: #211544; */
@@ -293,11 +295,16 @@
     cursor: pointer;
     background-color: #FDF1DA;
     transition: all 0.2s ease;
+    border: #211544 solid 3px;
     border-style: dashed;
     border-radius: 5px;
     font-weight: bold;
     /* margin-left: 600px; */
     align-self: flex-end;
+}
+.add-btn a{
+    text-decoration: none;
+    color: #211544;
 }
 .action-box .add-btn:hover
 {
@@ -442,10 +449,7 @@ input[type="checkbox"]
     height: 100px;
     margin-top: 0;
 }
-.page nav
-{
-    /* transform: translate(-50%, -50%); */
-}
+
 .pagination
 {
     display: flex;

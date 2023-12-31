@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	const additionalInfo = document.querySelector("#title-2");
 	const content1 = document.querySelector("#content-1");
 	const content2 = document.querySelector("#content-2");
+
 	console.log(content1.style.display);
 	additionalInfo.addEventListener("click", () => {
 		if (content1.style.display != "none") {
@@ -38,6 +39,8 @@ window.addEventListener("DOMContentLoaded", function () {
 	const report = document.querySelector("#report");
 	const rev = document.querySelector("#rev");
 	const rep = document.querySelector("#rep");
+	const rateReport = document.querySelector(".rating");
+	const rateting = rateReport.innerHTML;
 	report.addEventListener("click", () => {
 		if (rev.style.display != "none") {
 			review.style.color =
@@ -47,6 +50,8 @@ window.addEventListener("DOMContentLoaded", function () {
 			rep.style.display =
 				rep.style.display === "block" ? "none" : "block";
 			rev.style.display = rev.style.display === "none" ? "block" : "none";
+			rateReport.innerHTML = "";
+			rateReport.innerHTML = "Totel report: 3";
 		}
 	});
 	review.addEventListener("click", () => {
@@ -59,23 +64,25 @@ window.addEventListener("DOMContentLoaded", function () {
 				content2.style.display === "block" ? "none" : "block";
 			rep.style.display =
 				content1.style.display === "none" ? "block" : "none";
+			rateReport.innerHTML = "";
+			rateReport.innerHTML = rateting;
 		}
 	});
 });
 const changeImg = document.querySelector(".change-img");
 const inputFile = document.querySelector(".chooseFile");
 const coverImg = document.querySelector(".cover-img");
-changeImg.addEventListener("click", ()=>{
+changeImg.addEventListener("click", () => {
 	inputFile.click();
-	inputFile.addEventListener("change", ()=>{
+	inputFile.addEventListener("change", () => {
 		var input = event.target;
 		if (input.files && input.files[0]) {
-            var reader = new FileReader();
+			var reader = new FileReader();
 
-            reader.onload = function (e) {
-                coverImg.src = e.target.result;
-            };
-            reader.readAsDataURL(input.files[0]);
-        }
-	})
-})
+			reader.onload = function (e) {
+				coverImg.src = e.target.result;
+			};
+			reader.readAsDataURL(input.files[0]);
+		}
+	});
+});

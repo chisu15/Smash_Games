@@ -2,27 +2,31 @@
 #594E7C
 #FDF1DA
 #62b668 */
+
+/* #62b668 */
 html
 {
-    font-size: 16px;
+    font-size: 14px;
     font-family: niramit;
     overflow-x: hidden;
+
 }
 body
 {
     background-color: #FDF1DA;
     font-size: 20px;
-    margin: 0;
-    height: 100vh;
 }
 /* SIDER */
 .side-bar
 {
     position: relative;
-    z-index: 99999;
+    display: flex;
 }
 aside
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #211544;
     position: fixed;
     text-align: center;
@@ -31,16 +35,6 @@ aside
     top: 0;
     left: 0;
 
-}
-aside .logo
-{
-    width: 500px;
-    height: fit-content;
-    margin-top: 20px;
-    /* margin-bottom: 20px;
-    padding-left:80px;
-    border: #FDF1DA solid; */
-    margin-bottom: 40px;
 }
 aside .side-link
 {
@@ -94,33 +88,44 @@ aside .side-link.active::before
 .header
 {
     position: relative;
-    margin-top: -10px;
+
     top: 0;
     right: 0;
     left: 0;
     z-index: 9999;
 }
-.head-box 
+.fixed-head 
 {
     /* position: sticky; */
     display: flex;
     flex-direction: row;
     position: fixed;
+    align-items: center;
+    justify-content:space-between;
     background-color: #211544;
     width: 100vw;
-    height: 105px;
-    justify-content: flex-end;
+    height: 100px;
     top: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
 }
-.head-box .user-box
+.fixed-head .logo
+{
+    padding-left: 40px;
+}
+.fixed-head .user-btn
+{
+    display: flex;
+    justify-content: center;
+}
+.fixed-head .user-box
 {
     display: flex;
     background-color: #594E7C;
     align-items: center;
     align-self: center;
     width: auto;
-    height: 40%;
+    height: 40px;
     padding-right: 20px;
     margin-right: 50px;
     /* margin-top: 30px; */
@@ -131,9 +136,9 @@ aside .side-link.active::before
     font-weight: bold;
     transition: all 0.2s ease;
     padding-left: 20px;
-
+    cursor: pointer;
 }
-.head-box img
+.fixed-head .ava-user
 {
     border-radius: 50px;
     border:#62b668 solid 7px;
@@ -144,13 +149,14 @@ aside .side-link.active::before
     margin-right: -15px;
     z-index: 100;
 }
-.head-box #logout
-{
-    gap: 8px;
-}
+
 .user-box:hover
 {
     background-color: #62b668 ;
+}
+#logout:hover
+{
+    background-color: rgb(221, 95, 95) ;
 }
 /* END HEADER */
 /* DASHBOARD CONTENT */
@@ -160,23 +166,20 @@ aside .side-link.active::before
     color: #211544;
     position: relative;
     /* border: #211544 solid; */
-    top: 107px;
+    top: 90px;
     left: 241px;
     height: auto;
-    width: calc(100vw - 250px);
+    width: calc(100vw - 265px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
 }
 .content-title
 {
     height: fit-content;
     padding-inline: 30%;
-    margin-left: 30px;
-    margin-top: -1px;
+    margin-top: -3px;
     margin-bottom: 0;
     border-bottom: #211544 solid 4px;
-    /* border: #211544 solid;  */
-    text-align: center;
 }
