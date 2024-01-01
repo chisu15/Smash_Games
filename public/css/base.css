@@ -183,3 +183,37 @@ aside .side-link.active::before
     margin-bottom: 0;
     border-bottom: #211544 solid 4px;
 }
+.add-img
+{
+    width: 35%;
+    border: #211544 solid 3px;
+    border-style: dashed;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.add-img:hover
+{
+    color: #17793D;
+    border: #17793D solid 3px;
+    border-style: dashed;
+}
+.add-img h1
+{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 1.1;
+    border-radius: 50%;
+    border: #211544 solid 3px;
+    border-style: dashed;
+    /* background-repeat: ; */
+}
+.chooseFile-2
+{
+    display: none;
+}

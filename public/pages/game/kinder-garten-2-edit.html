@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-SmashGames</title>
+    <!-- <link rel="stylesheet" href="../../css/base.css"> -->
+    <link rel="stylesheet" href="../../css/edit-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/gxw6fdjpq39otp8y8bpgzhrcucsggc9xbotnyyzowmcw0n3u/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="side-bar">
+            <aside>
+
+                <a href="../dashboard.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>
+                        Dashboard
+                    </h3>
+                </a>
+                <a href="../products.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        inventory_2
+                    </span>
+                    <h3>
+                        Products
+                    </h3>
+
+                </a>
+                <a href="../games.html" class="side-link active">
+                    <span class="material-symbols-outlined">
+                        sports_esports
+                    </span>
+                    <h3>
+                        Games
+                    </h3>
+                </a>
+                <a href="../post.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        post
+                    </span>
+                    <h3>
+                        Posts
+                    </h3>
+                </a>
+                <a href="../users.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <h3>
+                        Users
+                    </h3>
+                </a>
+                <a href="../order.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        orders
+                    </span>
+                    <h3>
+                        Orders
+                    </h3>
+                </a>
+            </aside>
+        </div>
+        <div class="header">
+            <nav class="fixed-head">
+                <div class="logo">
+                    <a href="../dashboard.html">
+                        <img src="../../image/Artboard 2logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <div class="user-btn">
+                    <img src="../../image/avatar.jpg" alt="" class="ava-user">
+                    <div class="user-box">
+                        <p>Sean Young</p>
+                    </div>
+                    <a href="../../../index.html" class="user-box" id="logout">
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <h1 class="content-title">
+                <div class="title-line">
+                    <a href="../games.html" class="pre-page">
+                        Games
+                    </a>
+                    <div>></div>
+                    <a href="./kinder-garten-2.html" class="current">
+                        Kindergarten 2
+                    </a>
+                    <div>></div>
+                    <a href="./kinder-garten-2-edit.html" class="current">
+                        Edit
+                    </a>
+                </div>
+            </h1>
+            <div class="img-name-item">
+                <!-- <a href="" class="edit-btn">
+                    <button>
+                        Edit
+                    </button>
+                </a> -->
+                <img src="../../image/Kindergarten 2/Kindergarten 2.jpg" alt="" class="cover-img">
+                <h1 class="change-img">Change cover image</h1>
+                <input type="file" name="" id="" style="display: none;" class="chooseFile">
+                <!-- <div class="sub">
+                    <div class="sub-user">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <div>by</div>
+                        <a href=""> Sean Young</a>
+                    </div>
+                    <div class="sub-date">
+                        <span class="material-symbols-outlined">
+                            calendar_month
+                        </span>
+                        <div>10/10/2023</div>
+                    </div>
+                    <div class="sub-views">
+                        <span class="material-symbols-outlined">
+                            visibility
+                        </span>
+                        <div>2534</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="details-box">
+                <div class="details-title">
+                    <h2>Details</h2>
+                </div>
+                <table class="table-details">
+                    <tbody>
+                        <tr>
+                            <th>
+                                Name:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="Kindergarten 2">
+                            </td>
+                            <th>
+                                Status:
+                            </th>
+                            <td colspan="1">
+                                <button class="btn-status-table">Available</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Game code:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="SKU:N123">
+                            </td>
+                            <th>
+                                Price:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="$14.99">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Upload date:
+                            </th>
+                            <td colspan="1">
+                                <input type="date" value="2023-11-21">
+                            </td>
+                            <th>
+                                Total Visits:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Uploader:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="Sean Young">
+
+                            </td>
+                            <th>
+                                Revenue:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Category:
+                            </th>
+                            <td colspan="3">
+                                <input type="text" value="Indie, Pixel, Adventure, Mystery, Horror">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Discount:
+                            </th>
+                            <td>
+                                <input type="text" value="Currently no">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>From:</th>
+                            <td colspan="1">
+                                <input type="date" value="">
+                            </td>
+                            <th>To:</th>
+                            <td colspan="1">
+                                <input type="date" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="infomation">
+                <div class="info-title">
+                    <h2>Infomation</h2>
+                </div>
+                <div class="info-content">
+
+                    <div class="info">
+                        <div class="info-text">
+                            <input type="text" value="Kindergar...ten ?">
+                            <textarea name="" id="" cols="50" rows="10">
+Kindergarten 2 is the long awaited sequel to 2017's Kindergarten! After the events that occurred on Monday, the children have been rezoned to an all new school. Discover all new areas and new characters as you assist the children with their various assignments. Whether it's helping Cindy find a new boyfriend, or helping the janitor with his war on Bob, there's always someone who can be...assisted. Play through the same wonderful Tuesday over and over again, in what has been described as "Groundhog Day with messed up children."
+</textarea>
+                        </div>
+                        <div class="info-img">
+                            <div class="img-close">
+                                <img src="../../image/Kindergarten 2/screenshots/kd2 screenshot 1.jfif" alt="">
+                                <div class="close-btn">
+                                    <span class="material-symbols-outlined">
+                                        cancel
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn-info" id="info">
+                            <span class="material-symbols-outlined">
+                                cancel
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info-text">
+                            <input type="text" value="Even More Kindergarten Fun!">
+                            <textarea name="" id="" cols="50" rows="10">
+Play dodgeball!
+Learn how magnets work!
+Collect flower samples for a mad scientist!
+Steal the spazzy kid's inhaler!
+Facilitate a war between custodians!
+Help the teacher get her fix!
+Aid and abet in a fratricide!
+And many other classic kindergarten activites!
+</textarea>
+                        </div>
+                        <div class="info-img">
+                            <div class="img-close">
+                                <img src="../../image/Kindergarten 2/screenshots/kd2 screenshot 4.jfif" alt="">
+                                <div class="close-btn">
+                                    <span class="material-symbols-outlined">
+                                        cancel
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn-info" id="info">
+                            <span class="material-symbols-outlined">
+                                cancel
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info-text">
+                            <input type="text" value="A Bigger and Better Kindergarten!">
+                            <textarea name="" id="" cols="50" rows="10">
+9 new story missions!
+Over 15 new environments!
+50 collectible Monstermon Cards!
+30 unlockable outfits!
+</textarea>
+                        </div>
+                        <div class="info-img">
+                            <div class="img-close">
+                                <img src="../../image/Kindergarten 2/screenshots/kd2 screenshot 6.jfif" alt="">
+                                <div class="close-btn">
+                                    <span class="material-symbols-outlined">
+                                        cancel
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn-info" id="info">
+                            <span class="material-symbols-outlined">
+                                cancel
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info" id="add-info">
+                        <div class="icon-add">
+                            +
+                        </div>
+                        <div class="add-text" style="font-weight: bold;">
+                            Add a new information group
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description-box">
+                <div class="description-title">
+                    <h2 id="title-1">Description</h2>
+                    <h2 id="title-2">Additional Information</h2>
+                </div>
+                <div class="description-content">
+                    <textarea name="" id="content-1" cols="1" rows="8">
+Welcome to Kindergarten 2, which takes place on Tuesday! After the events of Monday, you'll find yourself in a new school with new friends...and new ways to get ruthlessly murdered.
+                    </textarea>
+                    <textarea name="" id="content-2" cols="1" rows="8">
+Minimum:
+OS*: Windows 7
+Processor: Intel Core 2 Duo 2.1 GHz or equivalent
+Memory: 2 GB RAM
+Graphics: 2nd Generation Intel Core HD Graphics (2000/3000), 512MB
+DirectX: Version 9.0
+Storage: 300 MB available space
+Sound Card: Any
+
+Note: "Kindergarten" is a trademark of Con Man Games and SmashGames. All rights reserved. 2019..   
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Background Gif
+                    </h2>
+                </div>
+
+                <div class="img-box-content">
+                    <div class="close-btn" id="gif">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                    </div>
+                    <img src="../../image/Kindergarten 2/intro gif.gif" alt="" style="width: 80%; height: fit-content;">
+                </div>
+            </div>
+
+
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Trailer
+                    </h2>
+                </div>
+
+                <div class="video-container">
+                    <iframe width="1903" height="764" src="https://www.youtube.com/embed/PMAGkquDV8Q" title="Kindergarten 2 Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="close-btn" id="vid">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Screenshots
+                    </h2>
+                </div>
+                <div class="img-box-content">
+                    <div class="grp-img">
+                        <div class="img-close">
+                            <img src="../../image/Kindergarten 2/screenshots/kd2 screenshot 1.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Kindergarten 2/screenshots/kd2 screenshot 2.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Kindergarten 2/screenshots/kd2 screenshot 3.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="grp-img">
+                        <div class="img-close">
+                            <img src="../../image/Kindergarten 2/screenshots/kd2 screenshot 4.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Kindergarten 2/screenshots/kd2 screenshot 5.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Kindergarten 2/screenshots/kd2 screenshot 6.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-img">
+                        <h1>+</h1>
+                        <p>Add a new image</p>
+                        <input type="file" class="chooseFile-2">
+                    </div>
+
+                </div>
+            </div>
+            <div class="save-discard-btn">
+                <a>
+                    <button id="save-btn">
+                        <a href="./kinder-garten-2.html">
+                            SAVE CHANGES
+                        </a>
+                    </button>
+                </a>
+                <a>
+                    <button id="discard-btn">
+                        <a href="./kinder-garten-2-edit.html">
+                            DISCARD ALL
+                        </a>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/edit-details.js"></script>
+</body>
+
+</html>

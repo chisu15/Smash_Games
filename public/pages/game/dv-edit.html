@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-SmashGames</title>
+    <!-- <link rel="stylesheet" href="../../css/base.css"> -->
+    <link rel="stylesheet" href="../../css/edit-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/gxw6fdjpq39otp8y8bpgzhrcucsggc9xbotnyyzowmcw0n3u/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="side-bar">
+            <aside>
+
+                <a href="../dashboard.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>
+                        Dashboard
+                    </h3>
+                </a>
+                <a href="../products.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        inventory_2
+                    </span>
+                    <h3>
+                        Products
+                    </h3>
+
+                </a>
+                <a href="../games.html" class="side-link active">
+                    <span class="material-symbols-outlined">
+                        sports_esports
+                    </span>
+                    <h3>
+                        Games
+                    </h3>
+                </a>
+                <a href="../post.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        post
+                    </span>
+                    <h3>
+                        Posts
+                    </h3>
+                </a>
+                <a href="../users.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <h3>
+                        Users
+                    </h3>
+                </a>
+                <a href="../order.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        orders
+                    </span>
+                    <h3>
+                        Orders
+                    </h3>
+                </a>
+            </aside>
+        </div>
+        <div class="header">
+            <nav class="fixed-head">
+                <div class="logo">
+                    <a href="../dashboard.html">
+                        <img src="../../image/Artboard 2logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <div class="user-btn">
+                    <img src="../../image/avatar.jpg" alt="" class="ava-user">
+                    <div class="user-box">
+                        <p>Sean Young</p>
+                    </div>
+                    <a href="../../../index.html" class="user-box" id="logout">
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <h1 class="content-title">
+                <div class="title-line">
+                    <a href="../games.html" class="pre-page">
+                        Games
+                    </a>
+                    <div>></div>
+                    <a href="./dv.html" class="current">
+                        Dragonbolt Vanguard
+                    </a>
+                    <div>></div>
+                    <a href="./dv-edit.html" class="current">
+                        Edit
+                    </a>
+                </div>
+            </h1>
+            <div class="img-name-item">
+                <!-- <a href="" class="edit-btn">
+                    <button>
+                        Edit
+                    </button>
+                </a> -->
+                <img src="../../image/Gamedead/Dragonbolt vanguard/db cover.jpg" alt="" class="cover-img">
+                <h1 class="change-img">Change cover image</h1>
+                <input type="file" name="" id="" style="display: none;" class="chooseFile">
+                <!-- <div class="sub">
+                    <div class="sub-user">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <div>by</div>
+                        <a href=""> Sean Young</a>
+                    </div>
+                    <div class="sub-date">
+                        <span class="material-symbols-outlined">
+                            calendar_month
+                        </span>
+                        <div>10/10/2023</div>
+                    </div>
+                    <div class="sub-views">
+                        <span class="material-symbols-outlined">
+                            visibility
+                        </span>
+                        <div>2534</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="details-box">
+                <div class="details-title">
+                    <h2>Details</h2>
+                </div>
+                <table class="table-details">
+                    <tbody>
+                        <tr>
+                            <th>
+                                Name:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="Dragonbolt Vanguard">
+                            </td>
+                            <th>
+                                Status:
+                            </th>
+                            <td colspan="1">
+                                <button class="btn-status-table" style="background-color: red;">Unavailable</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Game code:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="SKU:N123">
+                            </td>
+                            <th>
+                                Price:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Upload date:
+                            </th>
+                            <td colspan="1">
+                                <input type="date" value="2023-11-21">
+                            </td>
+                            <th>
+                                Total Visits:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Uploader:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="Sean Young">
+
+                            </td>
+                            <th>
+                                Revenue:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Category:
+                            </th>
+                            <td colspan="3">
+                                <input type="text" value="Indie, Pixel, Adventure, RPG, Action">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Discount:
+                            </th>
+                            <td>
+                                <input type="text" value="Currently no">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>From:</th>
+                            <td colspan="1">
+                                <input type="date" value="">
+                            </td>
+                            <th>To:</th>
+                            <td colspan="1">
+                                <input type="date" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="infomation">
+                <div class="info-title">
+                    <h2>Infomation</h2>
+                </div>
+                <div class="info-content">
+
+
+                    <div class="info" id="add-info">
+                        <div class="icon-add">
+                            +
+                        </div>
+                        <div class="add-text" style="font-weight: bold;">
+                            Add a new information group
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description-box">
+                <div class="description-title">
+                    <h2 id="title-1">Description</h2>
+                    <h2 id="title-2">Additional Information</h2>
+                </div>
+                <div class="description-content">
+                    <textarea name="" id="content-1" cols="1" rows="8">
+    Assemble your team of valiant warriors, each pixel pulsating with character, and embark on a strategic journey where every move could tip the balance between victory and defeat.
+                    </textarea>
+                    <textarea name="" id="content-2" cols="1" rows="8">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
+unchanged. It was popularised in the 1960s 
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Background Gif
+                    </h2>
+                </div>
+
+                <div class="img-box-content">
+                    <div class="close-btn" id="gif">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                    </div>
+                    <img src="../../image/Gamedead/intro gif.gif" alt="" style="width: 80%; height: fit-content;">
+                </div>
+            </div>
+
+
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Trailer
+                    </h2>
+                </div>
+
+                <div class="video-container">
+
+                </div>
+            </div>
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Screenshots
+                    </h2>
+                </div>
+                <div class="img-box-content">
+                    <div class="grp-img">
+                        <div class="img-close">
+                        <img src="../../image/Gamedead/Dragonbolt vanguard/db 2.png" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Gamedead/Dragonbolt vanguard/db 3.png" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Gamedead/Dragonbolt vanguard/db.jfif" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp-img">
+                        <div class="img-close">
+                            <img src="../../image/Gamedead/Dragonbolt vanguard/db screenshot 1.jpg" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Gamedead/Dragonbolt vanguard/db screenshot 2.png" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Gamedead/Dragonbolt vanguard/db screenshot 3.jfif" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-img">
+                        <h1>+</h1>
+                        <p>Add a new image</p>
+                        <input type="file" class="chooseFile-2">
+                    </div>
+
+                </div>
+            </div>
+            <div class="save-discard-btn">
+                <a>
+                    <button id="save-btn">
+                        <a href="./dv.html">
+                            SAVE CHANGES
+                        </a>
+                    </button>
+                </a>
+                <a>
+                    <button id="discard-btn">
+                        <a href="./dv-edit.html">
+                            DISCARD ALL
+                        </a>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/edit-details.js"></script>
+</body>
+
+</html>

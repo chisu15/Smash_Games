@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-SmashGames</title>
+    <!-- <link rel="stylesheet" href="../../css/base.css"> -->
+    <link rel="stylesheet" href="../../css/edit-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/gxw6fdjpq39otp8y8bpgzhrcucsggc9xbotnyyzowmcw0n3u/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="side-bar">
+            <aside>
+
+                <a href="../dashboard.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>
+                        Dashboard
+                    </h3>
+                </a>
+                <a href="../products.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        inventory_2
+                    </span>
+                    <h3>
+                        Products
+                    </h3>
+
+                </a>
+                <a href="../games.html" class="side-link active">
+                    <span class="material-symbols-outlined">
+                        sports_esports
+                    </span>
+                    <h3>
+                        Games
+                    </h3>
+                </a>
+                <a href="../post.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        post
+                    </span>
+                    <h3>
+                        Posts
+                    </h3>
+                </a>
+                <a href="../users.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <h3>
+                        Users
+                    </h3>
+                </a>
+                <a href="../order.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        orders
+                    </span>
+                    <h3>
+                        Orders
+                    </h3>
+                </a>
+            </aside>
+        </div>
+        <div class="header">
+            <nav class="fixed-head">
+                <div class="logo">
+                    <a href="../dashboard.html">
+                        <img src="../../image/Artboard 2logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <div class="user-btn">
+                    <img src="../../image/avatar.jpg" alt="" class="ava-user">
+                    <div class="user-box">
+                        <p>Sean Young</p>
+                    </div>
+                    <a href="../../../index.html" class="user-box" id="logout">
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <h1 class="content-title">
+                <div class="title-line">
+                    <a href="../games.html" class="pre-page">
+                        Games
+                    </a>
+                    <div>></div>
+                    <a href="./little-wood.html" class="current">
+                        Littlewood
+                    </a>
+                    <div>></div>
+                    <a href="./little-wood-edit.html" class="current">
+                        Edit
+                    </a>
+                </div>
+            </h1>
+            <div class="img-name-item">
+                <!-- <a href="" class="edit-btn">
+                    <button>
+                        Edit
+                    </button>
+                </a> -->
+                <img src="../../image/Littlewood/littlewood cover image.jpg" alt="" class="cover-img">
+                <h1 class="change-img">Change cover image</h1>
+                <input type="file" name="" id="" style="display: none;" class="chooseFile">
+                <!-- <div class="sub">
+                    <div class="sub-user">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <div>by</div>
+                        <a href=""> Sean Young</a>
+                    </div>
+                    <div class="sub-date">
+                        <span class="material-symbols-outlined">
+                            calendar_month
+                        </span>
+                        <div>10/10/2023</div>
+                    </div>
+                    <div class="sub-views">
+                        <span class="material-symbols-outlined">
+                            visibility
+                        </span>
+                        <div>2534</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="details-box">
+                <div class="details-title">
+                    <h2>Details</h2>
+                </div>
+                <table class="table-details">
+                    <tbody>
+                        <tr>
+                            <th>
+                                Name:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="Littlewood">
+                            </td>
+                            <th>
+                                Status:
+                            </th>
+                            <td colspan="1">
+                                <button class="btn-status-table">Available</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Game code:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="SKU:N123">
+                            </td>
+                            <th>
+                                Price:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="$3.99">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Upload date:
+                            </th>
+                            <td colspan="1">
+                                <input type="date" value="2023-11-21">
+                            </td>
+                            <th>
+                                Total Visits:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Uploader:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="Sean Young">
+
+                            </td>
+                            <th>
+                                Revenue:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Category:
+                            </th>
+                            <td colspan="3">
+                                <input type="text" value="Simulation, Indie, Pixel, World Building, RPG, Adventure">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Discount:
+                            </th>
+                            <td>
+                                <input type="text" value="Currently no">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>From:</th>
+                            <td colspan="1">
+                                <input type="date" value="">
+                            </td>
+                            <th>To:</th>
+                            <td colspan="1">
+                                <input type="date" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="infomation">
+                <div class="info-title">
+                    <h2>Infomation</h2>
+                </div>
+                <div class="info-content">
+
+                    <div class="info">
+                        <div class="info-text">
+                            <input type="text" value="The Hero Who Saved the World">
+                            <textarea name="" id="" cols="50" rows="10">
+Explore the vast world of Solemn. Enchanted Forests, Bustling Fishing Towns, & Dark Mining Caves are some of the few places to visit.
+Meet Townsfolk and convince them to stay in your town. Perhaps meeting people will unlock your memories of the past…
+Collect rare items and materials found across the world and bring them back to your town for selling and crafting!
+</textarea>
+                        </div>
+                        <div class="info-img">
+                            <div class="img-close">
+                                <img src="../../image/Littlewood/screenshots/lw screenshot.jpg" alt="">
+                                <div class="close-btn">
+                                    <span class="material-symbols-outlined">
+                                        cancel
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn-info" id="info">
+                            <span class="material-symbols-outlined">
+                                cancel
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info-text">
+                            <input type="text" value="Customize Your Town">
+                            <textarea name="" id="" cols="50" rows="10">
+Harvest materials by chopping wood, mining ores, catching bugs, and fishing in rivers and ponds!
+Unlock new structures to build by meeting new Townsfolk. Want a Tavern or a Lumber Mill? How about a Fishing Hut or a Magical Library? Your town's design is all up to you!
+Fulfill your Townsfolk's requests. Some may want to live on a higher elevation, others may want to be surrounded by trees and water. Fulfilling the requests of your Townsfolk will earn you their hearts and unlock new relationship paths.
+</textarea>
+                        </div>
+                        <div class="info-img">
+                            <div class="img-close">
+                                <img src="../../image/Littlewood/screenshots/lw screenshot.jpg" alt="">
+                                <div class="close-btn">
+                                    <span class="material-symbols-outlined">
+                                        cancel
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn-info" id="info">
+                            <span class="material-symbols-outlined">
+                                cancel
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info" id="add-info">
+                        <div class="icon-add">
+                            +
+                        </div>
+                        <div class="add-text" style="font-weight: bold;">
+                            Add a new information group
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description-box">
+                <div class="description-title">
+                    <h2 id="title-1">Description</h2>
+                    <h2 id="title-2">Additional Information</h2>
+                </div>
+                <div class="description-content">
+                    <textarea name="" id="content-1" cols="1" rows="8">
+The world has already been saved. Now it's time to rebuild The world has already been saved. Now it's time to rebuild your town, learn new hobbies, and forge lifelong friendships in this peaceful and relaxing RPG.your town, learn new hobbies, and forge lifelong friendships in this peaceful and relaxing RPG.
+                    </textarea>
+                    <textarea name="" id="content-2" cols="1" rows="8">
+OS*: Windows XP, Vista, 7, 8/8.1, 10 <br>
+Processor: 2.0 GHz Memory: 1 GB RAM <br>
+Graphics: 256MB Video Memory, capable of OpenGL 2.0+ support <br>
+Storage: 1 GB available space <br>
+Sound Card: Any <br>
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Background Gif
+                    </h2>
+                </div>
+
+                <div class="img-box-content">
+                    <div class="close-btn" id="gif">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                    </div>
+                    <img src="../../image/Littlewood/intro gif.gif" alt="" style="width: 80%; height: fit-content;">
+                </div>
+            </div>
+
+
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Trailer
+                    </h2>
+                </div>
+
+                <div class="video-container">
+                    <iframe width="1903" height="764" src="https://www.youtube.com/embed/_JxrF3QGBT8"
+                        title="Littlewood v1.0 Launch Trailer" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="close-btn" id="vid">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Screenshots
+                    </h2>
+                </div>
+                <div class="img-box-content">
+                    <div class="grp-img">
+                        <div class="img-close">
+                            <img src="../../image/Littlewood/screenshots/lw screenshot.jpg" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Littlewood/screenshots/lw screenshot 2.jpg" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Littlewood/screenshots/lw screenshot 3.jpg" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="grp-img">
+                        <div class="img-close">
+                            <img src="../../image/Littlewood/screenshots/lw screenshot 4.jpg" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Littlewood/screenshots/lw screenshot 5.jpg" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Littlewood/screenshots/lw sccreenshot 6.png" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-img">
+                        <h1>+</h1>
+                        <p>Add a new image</p>
+                        <input type="file" class="chooseFile-2">
+                    </div>
+
+                </div>
+            </div>
+            <div class="save-discard-btn">
+                <a>
+                    <button id="save-btn">
+                        <a href="./little-wood.html">
+                            SAVE CHANGES
+                        </a>
+                    </button>
+                </a>
+                <a>
+                    <button id="discard-btn">
+                        <a href="./little-wood-edit.html">
+                            DISCARD ALL
+                        </a>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/edit-details.js"></script>
+</body>
+
+</html>

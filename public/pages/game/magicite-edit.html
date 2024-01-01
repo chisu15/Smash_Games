@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-SmashGames</title>
+    <!-- <link rel="stylesheet" href="../../css/base.css"> -->
+    <link rel="stylesheet" href="../../css/edit-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/gxw6fdjpq39otp8y8bpgzhrcucsggc9xbotnyyzowmcw0n3u/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="side-bar">
+            <aside>
+
+                <a href="../dashboard.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>
+                        Dashboard
+                    </h3>
+                </a>
+                <a href="../products.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        inventory_2
+                    </span>
+                    <h3>
+                        Products
+                    </h3>
+
+                </a>
+                <a href="../games.html" class="side-link active">
+                    <span class="material-symbols-outlined">
+                        sports_esports
+                    </span>
+                    <h3>
+                        Games
+                    </h3>
+                </a>
+                <a href="../post.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        post
+                    </span>
+                    <h3>
+                        Posts
+                    </h3>
+                </a>
+                <a href="../users.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <h3>
+                        Users
+                    </h3>
+                </a>
+                <a href="../order.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        orders
+                    </span>
+                    <h3>
+                        Orders
+                    </h3>
+                </a>
+            </aside>
+        </div>
+        <div class="header">
+            <nav class="fixed-head">
+                <div class="logo">
+                    <a href="../dashboard.html">
+                        <img src="../../image/Artboard 2logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <div class="user-btn">
+                    <img src="../../image/avatar.jpg" alt="" class="ava-user">
+                    <div class="user-box">
+                        <p>Sean Young</p>
+                    </div>
+                    <a href="../../../index.html" class="user-box" id="logout">
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <h1 class="content-title">
+                <div class="title-line">
+                    <a href="../games.html" class="pre-page">
+                        Games
+                    </a>
+                    <div>></div>
+                    <a href="./magicite.html" class="current">
+                        Magicite
+                    </a>
+                    <div>></div>
+                    <a href="./magicite-edit.html" class="current">
+                        Edit
+                    </a>
+                </div>
+            </h1>
+            <div class="img-name-item">
+                <!-- <a href="" class="edit-btn">
+                    <button>
+                        Edit
+                    </button>
+                </a> -->
+                <img src="../../image/Magicite/mc cover.jpg" alt="" class="cover-img">
+                <h1 class="change-img">Change cover image</h1>
+                <input type="file" name="" id="" style="display: none;" class="chooseFile">
+                <!-- <div class="sub">
+                    <div class="sub-user">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <div>by</div>
+                        <a href=""> Sean Young</a>
+                    </div>
+                    <div class="sub-date">
+                        <span class="material-symbols-outlined">
+                            calendar_month
+                        </span>
+                        <div>10/10/2023</div>
+                    </div>
+                    <div class="sub-views">
+                        <span class="material-symbols-outlined">
+                            visibility
+                        </span>
+                        <div>2534</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="details-box">
+                <div class="details-title">
+                    <h2>Details</h2>
+                </div>
+                <table class="table-details">
+                    <tbody>
+                        <tr>
+                            <th>
+                                Name:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="Magicite">
+                            </td>
+                            <th>
+                                Status:
+                            </th>
+                            <td colspan="1">
+                                <button class="btn-status-table">Available</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Game code:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="SKU:N123">
+                            </td>
+                            <th>
+                                Price:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="$14.99">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Upload date:
+                            </th>
+                            <td colspan="1">
+                                <input type="date" value="2023-11-21">
+                            </td>
+                            <th>
+                                Total Visits:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Uploader:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="Sean Young">
+
+                            </td>
+                            <th>
+                                Revenue:
+                            </th>
+                            <td colspan="1">
+                                <input type="text" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Category:
+                            </th>
+                            <td colspan="3">
+                                <input type="text" value="Indie, Pixel, Adventure, RPG, Action">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Discount:
+                            </th>
+                            <td>
+                                <input type="text" value="Currently no">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>From:</th>
+                            <td colspan="1">
+                                <input type="date" value="">
+                            </td>
+                            <th>To:</th>
+                            <td colspan="1">
+                                <input type="date" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="infomation">
+                <div class="info-title">
+                    <h2>Infomation</h2>
+                </div>
+                <div class="info-content">
+
+                    <div class="info">
+                        <div class="info-text">
+                            <input type="text" value="Epic Boss Fights">
+                            <textarea name="" id="" cols="50" rows="10">
+Featuring many Rogue-like elements, Magicite randomly generates each underground dungeon for you and your friends to delve deep into. Chop trees, mine ores, and hunt beasts in order to collect the resources and materials you need to survive the harsh and unforgiving environment. With a ton of character traits, stats, companions, and classes, players will have a different experience each play through! Be prepared to die... A LOT.
+Magicite's main influences were Monster Hunter and Spelunky. I loved the resource collection and crafting in Monster Hunter, and of course fighting giant monsters with my friends. Spelunky's brutal yet rewarding platforming was also something that I wanted to capture with Magicite.
+</textarea>
+                        </div>
+                        <div class="info-img">
+                            <div class="img-close">
+                                <img src="../../image/Magicite/screenshot/mc screenshot 3.jfif" alt="">
+                                <div class="close-btn">
+                                    <span class="material-symbols-outlined">
+                                        cancel
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn-info" id="info">
+                            <span class="material-symbols-outlined">
+                                cancel
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info-text">
+                            <input type="text" value="Features:">
+                            <textarea name="" id="" cols="50" rows="10">
+Randomly Generated Dungeons - Experience a new dungeon each time you play.
+Permanent Death - The game logs all of your stats in a play through, leading the way for achievements and upgrades.
+Crafting System - Combine any two items to create a 
+new one!
+Combat System - If you plan on just running in and swinging you sword, you're gonna get wrecked.
+Unlockable Races, Hats, & Companions
+Multiplayer
+</textarea>
+                        </div>
+                        <div class="info-img">
+                            <div class="img-close">
+                                <img src="../../image/Magicite/screenshot/mc screenshot 4.jfif" alt="">
+                                <div class="close-btn">
+                                    <span class="material-symbols-outlined">
+                                        cancel
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn-info" id="info">
+                            <span class="material-symbols-outlined">
+                                cancel
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info" id="add-info">
+                        <div class="icon-add">
+                            +
+                        </div>
+                        <div class="add-text" style="font-weight: bold;">
+                            Add a new information group
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description-box">
+                <div class="description-title">
+                    <h2 id="title-1">Description</h2>
+                    <h2 id="title-2">Additional Information</h2>
+                </div>
+                <div class="description-content">
+                    <textarea name="" id="content-1" cols="1" rows="8">
+Explore, craft, and survive in this Multiplayer RPG Platformer with permanent death! Featuring many Rogue-like elements, Magicite randomly generates each underground dungeon for you and your friends to delve deep into.
+                    </textarea>
+                    <textarea name="" id="content-2" cols="1" rows="8">
+Minimum:
+
+OS*: Windows XP, Vista, 7
+Processor: 1.6 GHz
+Memory: 512 MB RAM
+Storage: 450 MB available space
+Sound Card: Any
+Recommended:
+
+OS*: Windows 8.1
+Processor: 2.4 GHz
+Memory: 4 GB RAM
+Connection: Internet connection (Ethernet)
+Storage: 1 GB available space
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Background Gif
+                    </h2>
+                </div>
+
+                <div class="img-box-content">
+                    <div class="close-btn" id="gif">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                    </div>
+                    <img src="../../image/Magicite/mc gif.gif" alt="" style="width: 80%; height: fit-content;">
+                </div>
+            </div>
+
+
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Trailer
+                    </h2>
+                </div>
+
+                <div class="video-container">
+                    <iframe width="1903" height="764" src="https://www.youtube.com/embed/cO8oVNdVjMY" title="Magicite Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="close-btn" id="vid">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-box">
+                <div class="img-box-title">
+                    <h2>
+                        Screenshots
+                    </h2>
+                </div>
+                <div class="img-box-content">
+                    <div class="grp-img">
+                        <div class="img-close">
+                            <img src="../../image/Magicite/screenshot/mc screenshot 1.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Magicite/screenshot/mc screenshot 2.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Magicite/screenshot/mc screenshot 3.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="grp-img">
+                        <div class="img-close">
+                            <img src="../../image/Magicite/screenshot/mc screenshot 4.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Magicite/screenshot/mc screenshot 5.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-close">
+                            <img src="../../image/Magicite/screenshot/mc screenshot 6.jfif" class="even" alt="">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-img">
+                        <h1>+</h1>
+                        <p>Add a new image</p>
+                        <input type="file" class="chooseFile-2">
+                    </div>
+
+                </div>
+            </div>
+            <div class="save-discard-btn">
+                <a>
+                    <button id="save-btn">
+                        <a href="./magicite.html">
+                            SAVE CHANGES
+                        </a>
+                    </button>
+                </a>
+                <a>
+                    <button id="discard-btn">
+                        <a href="./magicite-edit.html">
+                            DISCARD ALL
+                        </a>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/edit-details.js"></script>
+</body>
+
+</html>
