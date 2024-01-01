@@ -419,7 +419,7 @@ input[type="text"], input[type="date"]
 }
 .img-box-content
 {
-    width: calc(100vw - 540px);;
+    width: calc(100vw - 540px);
     display: flex;
     gap: 30px;
     align-items: center;
@@ -795,7 +795,6 @@ button
     position: relative;
     margin-top: -360px;
     margin-right: 5px;
-    font-size: 30px;
     cursor: pointer;
 }
 .close-btn-info :hover

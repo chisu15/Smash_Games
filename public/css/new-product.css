@@ -457,7 +457,7 @@ input[type="text"], input[type="date"]
 }
 .img-box .img-box-content
 {
-    width: 92%;
+    /* width: 92%; */
     display: flex;
     gap: 30px;
     align-items: center;

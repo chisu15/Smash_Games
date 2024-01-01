@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-SmashGames</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/order.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <div class="side-bar">
+            <aside>
+                <a href="../dashboard.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>
+                        Dashboard
+                    </h3>
+                </a>
+                <a href="../products.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        inventory_2
+                    </span>
+                    <h3>
+                        Products
+                    </h3>
+
+                </a>
+                <a href="../games.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        sports_esports
+                    </span>
+                    <h3>
+                        Games
+                    </h3>
+                </a>
+                <a href="../post.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        post
+                    </span>
+                    <h3>
+                        Posts
+                    </h3>
+                </a>
+                <a href="../users.html" class="side-link">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <h3>
+                        Users
+                    </h3>
+                </a>
+                <a href="../order.html" class="side-link active">
+                    <span class="material-symbols-outlined">
+                        orders
+                    </span>
+                    <h3>
+                        Orders
+                    </h3>
+                </a>
+            </aside>
+        </div>
+        <div class="header">
+            <nav class="fixed-head">
+                <div class="logo">
+                    <a href="../dashboard.html">
+                        <img src="../../image/Artboard 2logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <div class="user-btn">
+                    <img src="../../image/avatar.jpg" alt="" class="ava-user">
+                    <div class="user-box">
+                        <p>Sean Young</p>
+                    </div>
+                    <a href="../../../index.html" class="user-box" id="logout">
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <h1 class="content-title">
+                <div class="title-line">
+                    <a href="../order.html">
+                        Order list
+                    </a>
+                    <div>></div>
+                    <a href="../../pages/details/order-details.html" class="current">
+                        Order details
+                    </a>
+
+                </div>
+            </h1>
+
+            <div class="product-list">
+                <div class="title" style="display: flex; justify-content: space-between; gap: 10px; align-items: center; background-color: #fdf1da; color: #211544;">
+
+                    <h1 style="padding-left: 50px; font-size: 40px; font-weight: 900;">Order Number 1</h1>
+                    <h1>
+                        Ordered on <br>
+                        21 November, 2023
+                    </h1>
+                    <h1 style="padding-right: 50px;">
+                        Received on <br>
+25 November, 2023
+                    </h1>
+                </div>
+                <div class="info-order">
+                    
+                </div>
+                <div class="table-area">
+
+                    <table class="table-items">
+                        <thead>
+                            <tr>
+                                <th>SN</th>
+                                <th>Item Name</th>
+                                <th>Number</th>
+                                <th>Total</th>
+                                <th>Change</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- PAGE 1 -->
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a>
+
+                                        Little Wood
+
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $14.99
+                                </td>
+                                <td>
+                                    -$14.99
+                                </td>
+                                <td>
+                                    20/11/2023
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="pop-up">
+                        <div class="pop-up-content">
+                            <h1>
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </h1>
+                            <h1>
+                                Are you sure you want to delete?
+                            </h1>
+                            <div class="confirm-btn">
+                                <button id="yes">Yes</button>
+                                <button id="no">No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-previous">
+                                <button class="page-link"><- Previous</button>
+                            </li>
+                            <li class="page-item active">
+                                <button class="page-link">1</button>
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link">2</button>
+                            </li>
+
+                            <li class="page-next">
+                                <button class="page-link">Next -></button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/order-details.js"></script>
+</body>
+
+</html>

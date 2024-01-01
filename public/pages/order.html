@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin-SmashGames</title>
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/order.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,59 +91,56 @@
             </nav>
         </div>
         <div class="content">
-            <h1 class="content-title">Games</h1>
-            <div class="status-filter">
-                <div class="title">
-                    Status Filter
-                </div>
-                <div class="filter-area">
-                    <div class="btn-group">
-                        <button class="selected">All</button>
-                        <button>Available</button>
-                        <button>Unavailable</button>
+            <h1 class="content-title">Order List</h1>
+            <div class="status-sort">
+                <div class="status-filter">
+                    <div class="title">
+                        Search
                     </div>
-                    <form action="" method="get" class="search-box">
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                        <input type="text" name="" id="" placeholder="Enter Keyword">
-                        <button>Search</button>
-                    </form>
-                </div>
+                    <div class="filter-area">
+                        <form action="" method="get" class="search-box">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                            <input type="text" name="" id="" placeholder="Enter Keyword">
+                            <button>Search</button>
+                        </form>
+                    </div>
 
-            </div>
-            <div class="sorting">
-                <div class="title">
-                    Sorting
                 </div>
-                <div class="sorting-area">
-                    <div class="dropdown">
-                        <div class="default-text-box">
-                            <p class="default-text">
-                                --- Select sort type ---
-                            </p>
-                            <div class="icon">
-                                <span class="material-symbols-outlined">
-                                    keyboard_arrow_down
-                                </span>
-                            </div>
-                        </div>
-                        <div class="dropdown-content">
-                            <div class="list-chart">
-                                <p>SN increase</p>
-                                <p>SN decrease</p>
-                                <p>Price increase</p>
-                                <p>Price decrease</p>
-                            </div>
-                            <p>--- Select chart ---</p>
-                        </div>
+                <div class="sorting">
+                    <div class="title">
+                        Sorting
                     </div>
-                    <button class="clear-btn">Clear</button>
+                    <div class="sorting-area">
+                        <div class="dropdown">
+                            <div class="default-text-box">
+                                <p class="default-text">
+                                    --- Select sort type ---
+                                </p>
+                                <div class="icon">
+                                    <span class="material-symbols-outlined">
+                                        keyboard_arrow_down
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="list-chart">
+                                    <p>SN increase</p>
+                                    <p>SN decrease</p>
+                                    <p>Price increase</p>
+                                    <p>Price decrease</p>
+                                </div>
+                                <p>--- Select chart ---</p>
+                            </div>
+                        </div>
+                        <button class="clear-btn">Clear</button>
+                    </div>
                 </div>
             </div>
             <div class="product-list">
                 <div class="title">
-                    Game List
+                    Order List
                 </div>
                 <div class="table-area">
                     <div class="action-box">
@@ -157,7 +154,7 @@
                             <button class="apply-btn">Apply</button>
                         </div>
                         <a href="../pages/add-new/new-game.html">
-                        <button class="add-btn">
+                            <button class="add-btn">
                                 + New
                             </button>
                         </a>
@@ -167,12 +164,12 @@
                             <tr>
                                 <th><input type="checkbox" name="" id="" class="check-box"></th>
                                 <th>SN</th>
-                                <th>Image</th>
-                                <th>Product Name</th>
-                                <th>Price</th>
+                                <th>Order Name</th>
+                                <th>By</th>
+                                <th>Number of items</th>
+                                <th>Total</th>
+                                <th>Created Date</th>
                                 <th>Status</th>
-                                <th>Upload Date</th>
-                                <th>Uploader</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -186,271 +183,27 @@
                                     1
                                 </td>
                                 <td>
-                                    <a href="./game/little-wood.html">
-                                        <img src="../image/littlewood cover image.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./game/little-wood.html">
-                                        Littlewood
-                                    </a>
-                                </td>
-                                <td>
-                                    $14.99
-                                </td>
-                                <td>
-                                    <button class="btn-status-table">Available</button>
-                                </td>
-                                <td>
-                                    04/08/2020
-                                </td>
-                                <td>Sean Young</td>
-                                <td>
-                                    <div class="btn-delete">
-                                        <span class="material-symbols-outlined">
-                                            delete
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" id="" class="check-box">
-                                </td>
-                                <td class="sn">
-                                    1
-                                </td>
-                                <td>
-                                    <a href="./game/kinder-garten-2.html">
-                                        <img src="../image/kindergaten cover.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./game/kinder-garten-2.html">
-                                        Kindergarten 2
-                                    </a>
-                                </td>
-                                <td>
-                                    $14.99
-                                </td>
-                                <td>
-                                    <button class="btn-status-table">Available</button>
-                                </td>
-                                <td>
-                                    30/07/2019
-                                </td>
-                                <td>Sean Young</td>
-                                <td>
-                                    <div class="btn-delete">
-                                        <span class="material-symbols-outlined">
-                                            delete
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" id="" class="check-box">
-                                </td>
-                                <td class="sn">
-                                    1
-                                </td>
-                                <td>
-                                    <a href="./game/wraiths-slayer.html">
-                                        <img src="../image/ws cover.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./game/wraiths-slayer.html">
-                                        Wraithslayer
-                                    </a>
-                                </td>
-                                <td>
-                                    $4.99
-                                </td>
-                                <td>
-                                    <button class="btn-status-table">Available</button>
-                                </td>
-                                <td>
-                                    08/05/2019
-                                </td>
-                                <td>Sean Young</td>
-                                <td>
-                                    <div class="btn-delete">
-                                        <span class="material-symbols-outlined">
-                                            delete
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" id="" class="check-box">
-                                </td>
-                                <td class="sn">
-                                    1
-                                </td>
-                                <td>
-                                    <a href="./game/kinder-garten.html">
-                                        <img src="../image/kindergaten cover.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./game/kinder-garten.html">
-                                        Kindergarten
-                                    </a>
-                                </td>
-                                <td>
-                                    $4.99
-                                </td>
-                                <td>
-                                    <button class="btn-status-table">Available</button>
-                                </td>
-                                <td>
-                                    15/06/2017
-                                </td>
-                                <td>Sean Young</td>
-                                <td>
-                                    <div class="btn-delete">
-                                        <span class="material-symbols-outlined">
-                                            delete
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <!-- PAGE 2 -->
-                            <tr id="page-2">
-                                <td>
-                                    <input type="checkbox" name="" id="" class="check-box">
-                                </td>
-                                <td class="sn">
-                                    1
-                                </td>
-                                <td>
-                                    <a href="./game/dv.html">
-                                        <img src="../image/Roguelands cover.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./game/dv.html">
-                                        Roguelands
-                                    </a>
-                                </td>
-                                <td>
-                                    $9.99
-                                </td>
-                                <td>
-                                    <button class="btn-status-table">Available</button>
-                                </td>
-                                <td>
-                                    13/06/2016
-                                </td>
-                                <td>Sean Young</td>
-                                <td>
-                                    <div class="btn-delete">
-                                        <span class="material-symbols-outlined">
-                                            delete
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" id="" class="check-box">
-                                </td>
-                                <td class="sn">
-                                    1
-                                </td>
-                                <td>
-                                    <a href="./game/magicite.html">
-                                        <img src="../image/mc cover.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./game/magicite.html">
-                                        Magicite
-                                    </a>
-                                </td>
-                                <td>
-                                    $9.99
-                                </td>
-                                <td>
-                                    <button class="btn-status-table">Available</button>
-                                </td>
-                                <td>
-                                    09/06/2014
-                                </td>
-                                <td>Sean Young</td>
-                                <td>
-                                    <div class="btn-delete">
-                                        <span class="material-symbols-outlined">
-                                            delete
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" id="" class="check-box">
-                                </td>
-                                <td class="sn">
-                                    1
-                                </td>
-                                <td>
-                                    <a href="./game/pixel-kingdom.html">
-                                        <img src="../image/pk cover.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./game/pixel-kingdom.html">
-                                        Pixel Kingdom
-                                    </a>
-                                </td>
-                                <td>
-                                    $4.99
-                                </td>
-                                <td>
-                                    <button class="btn-status-table">Available</button>
-                                </td>
-                                <td>
-                                    22/05/2013
-                                </td>
-                                <td>Sean Young</td>
-                                <td>
-                                    <div class="btn-delete">
-                                        <span class="material-symbols-outlined">
-                                            delete
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" id="" class="check-box">
-                                </td>
-                                <td class="sn">
-                                    1
-                                </td>
-                                <td>
-                                    <a href="./game/dv.html">
-                                        <img src="../image/Gamedead/Dragonbolt vanguard/db cover.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./game/dv.html">
-                                        Dragonbolt Vanguard
-                                    </a>
-                                </td>
-                                <td>
+                                    <a href="./details/order-details.html">
 
+                                        Order name 1
+
+                                    </a>
                                 </td>
                                 <td>
-                                    <button class="btn-status-table" style="background-color: red;">Unvailable</button>
+                                    <a href="./details/order-details.html">
+                                        User name 1
+                                    </a>
                                 </td>
                                 <td>
-                                    10/05/2017
+                                    10
                                 </td>
-                                <td>Sean Young</td>
+                                <td>
+                                    $3.99
+                                </td>
+                                <td>
+                                    21/11/2023
+                                </td>
+                                <td> <button class="btn-status-table">Delivering</button></td>
                                 <td>
                                     <div class="btn-delete">
                                         <span class="material-symbols-outlined">
@@ -459,7 +212,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr id="page-1">
                                 <td>
                                     <input type="checkbox" name="" id="" class="check-box">
                                 </td>
@@ -467,25 +220,27 @@
                                     1
                                 </td>
                                 <td>
-                                    <a href="./game/dv.html">
-                                        <img src="../image/monsterpatch/Sean_Young_Avatar.png" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./game/mp.html">
-                                        Monsterpatch
-                                    </a>
-                                </td>
-                                <td>
+                                    <a href="./details/order-details.html">
 
+                                        Order name 1
+
+                                    </a>
                                 </td>
                                 <td>
-                                    <button class="btn-status-table" style="background-color: red;">Unvailable</button>
+                                    <a href="./details/order-details.html">
+                                        User name 1
+                                    </a>
                                 </td>
                                 <td>
-                                    10/05/2017
+                                    10
                                 </td>
-                                <td>Sean Young</td>
+                                <td>
+                                    $3.99
+                                </td>
+                                <td>
+                                    21/11/2023
+                                </td>
+                                <td> <button class="btn-status-table">Delivering</button></td>
                                 <td>
                                     <div class="btn-delete">
                                         <span class="material-symbols-outlined">
@@ -494,6 +249,303 @@
                                     </div>
                                 </td>
                             </tr>
+                            <tr id="page-1">
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+
+                                        Order name 1
+
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+                                        User name 1
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $3.99
+                                </td>
+                                <td>
+                                    21/11/2023
+                                </td>
+                                <td> <button class="btn-status-table">Delivering</button></td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+
+                                        Order name 1
+
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+                                        User name 1
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $3.99
+                                </td>
+                                <td>
+                                    21/11/2023
+                                </td>
+                                <td> <button class="btn-status-table">Delivering</button></td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+
+                                        Order name 1
+
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+                                        User name 1
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $3.99
+                                </td>
+                                <td>
+                                    21/11/2023
+                                </td>
+                                <td> <button class="btn-status-table">Delivering</button></td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+
+                                        Order name 1
+
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+                                        User name 1
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $3.99
+                                </td>
+                                <td>
+                                    21/11/2023
+                                </td>
+                                <td> <button class="btn-status-table">Delivering</button></td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+
+                                        Order name 1
+
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+                                        User name 1
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $3.99
+                                </td>
+                                <td>
+                                    21/11/2023
+                                </td>
+                                <td> <button class="btn-status-table">Delivering</button></td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+
+                                        Order name 1
+
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+                                        User name 1
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $3.99
+                                </td>
+                                <td>
+                                    21/11/2023
+                                </td>
+                                <td> <button class="btn-status-table">Delivering</button></td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+
+                                        Order name 1
+
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+                                        User name 1
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $3.99
+                                </td>
+                                <td>
+                                    21/11/2023
+                                </td>
+                                <td> <button class="btn-status-table">Delivering</button></td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="page-1">
+                                <td>
+                                    <input type="checkbox" name="" id="" class="check-box">
+                                </td>
+                                <td class="sn">
+                                    1
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+
+                                        Order name 1
+
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./details/order-details.html">
+                                        User name 1
+                                    </a>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    $3.99
+                                </td>
+                                <td>
+                                    21/11/2023
+                                </td>
+                                <td> <button class="btn-status-table">Delivering</button></td>
+                                <td>
+                                    <div class="btn-delete">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+
                         </tbody>
                     </table>
                     <div class="pop-up">
@@ -525,9 +577,7 @@
                             <li class="page-item">
                                 <button class="page-link">2</button>
                             </li>
-                            <li class="page-item">
-                                <button class="page-link">3</button>
-                            </li>
+
                             <li class="page-next">
                                 <button class="page-link">Next -></button>
                             </li>
@@ -538,7 +588,7 @@
         </div>
     </div>
 
-    <script src="../js/products.js"></script>
+    <script src="../js/order.js"></script>
 </body>
 
 </html>

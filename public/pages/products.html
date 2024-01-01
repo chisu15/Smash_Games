@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
@@ -98,9 +99,10 @@
                 </div>
                 <div class="filter-area">
                     <div class="btn-group">
-                        <button class="selected">All</button>
-                        <button>Available</button>
-                        <button>Unavailable</button>
+                        <button class="selected" onclick="filterStatus('all')">All</button>
+                        <button onclick="filterStatus('available')">Available</button>
+                        <button onclick="filterStatus('unavailable')">Unavailable</button>
+                        
                     </div>
                     <form action="" method="get" class="search-box">
                         <span class="material-symbols-outlined">
@@ -130,12 +132,13 @@
                         </div>
                         <div class="dropdown-content">
                             <div class="list-chart">
-                                <p>SN increase</p>
-                                <p>SN decrease</p>
-                                <p>Price increase</p>
-                                <p>Price decrease</p>
+                                <p id="sort-sn-asc" onclick="sortTable('sn', 'asc')">SN increase</p>
+                                <p id="sort-sn-desc" onclick="sortTable('sn', 'desc')">SN decrease</p>
+                                <p id="sort-price-asc" onclick="sortTable('price', 'asc')">Price increase</p>
+                                <p id="sort-price-desc" onclick="sortTable('price', 'desc')">Price decrease</p>
+                                
                             </div>
-                            <p>--- Select chart ---</p>
+                            <p>--- Select type sort ---</p>
                         </div>
                     </div>
                     <button class="clear-btn">Clear</button>
@@ -154,7 +157,7 @@
                                 <option value="inactive">Unavailable</option>
                                 <option value="delete-all">Delete all</option>
                             </select>
-                            <button class="apply-btn">Apply</button>
+                            <button class="apply-btn" id="sort-price-desc">Apply</button>
                         </div>
                         <a href="./add-new/new-product.html">
                         <button class="add-btn">
@@ -178,7 +181,7 @@
                         </thead>
                         <tbody>
                             <!-- PAGE 1 -->
-                            <tr id="page-1">
+                            <tr class="available" id="page-1">
                                 <td>
                                     <input type="checkbox" name="" id="" class="check-box">
                                 </td>

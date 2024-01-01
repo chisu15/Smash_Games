@@ -77,9 +77,9 @@ window.addEventListener("DOMContentLoaded", function () {
 		statusBtn.forEach((button) => {
 			button.addEventListener("click", () => {
 				let textBtn =
-					button.innerHTML === "Unavailable"
-						? "Available"
-						: "Unavailable";
+					button.innerHTML === "Done"
+						? "Delivering"
+						: "Done";
 
 				button.style.background =
 					button.style.background === "red" ? "#B4E37A" : "red";
@@ -181,7 +181,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	// PAGINATION
 	const tableItems = document.querySelector(".table-items");
-	const rowsPerPage = 4; // Số lượng hàng trên mỗi trang
+	const rowsPerPage = 8; // Số lượng hàng trên mỗi trang
 	const totalRows = tableItems.querySelectorAll("tbody tr").length;
 
 	let currentPage = 1;
@@ -226,70 +226,3 @@ editBtn2.addEventListener("click",() =>{
 editBtn3.addEventListener("click",() =>{
 	window.location.href="./post-3-edit.html";
 })
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const sortingDropdown = document.querySelector(".dropdown");
-//     const tableBody = document.querySelector(".table-items tbody");
-
-//     sortingDropdown.addEventListener("click", function (event) {
-//       if (event.target.tagName === "P") {
-//         const sortType = event.target.id;
-//         sortTable(sortType);
-//       }
-//     });
-
-//     function sortTable(sortType) {
-//       const rows = Array.from(tableBody.querySelectorAll("tr"));
-
-//       rows.sort(function (rowA, rowB) {
-//         const valueA = getValue(rowA, sortType);
-//         const valueB = getValue(rowB, sortType);
-
-//         if (sortType.includes("asc")) {
-//           return valueA - valueB;
-//         } else {
-//           return valueB - valueA;
-//         }
-//       });
-
-//       tableBody.innerHTML = "";
-//       rows.forEach(function (row) {
-//         tableBody.appendChild(row);
-//       });
-//     }
-
-//     function getValue(row, sortType) {
-//       if (sortType.includes("sn")) {
-//         return parseInt(row.querySelector(".sn").textContent);
-//       } else if (sortType.includes("price")) {
-//         return parseFloat(row.querySelector("td:nth-child(5)").textContent.replace("$", ""));
-//       }
-//     }
-//   });
-
-    function sortTable(sortType, sortOrder) {
-        const rows = Array.from(document.querySelectorAll('.table-items tbody tr'));
-
-        rows.sort((rowA, rowB) => {
-            const valueA = getValue(rowA, sortType);
-            const valueB = getValue(rowB, sortType);
-
-            return (sortOrder === 'asc') ? valueA - valueB : valueB - valueA;
-        });
-
-        const tableBody = document.querySelector('.table-items tbody');
-        tableBody.innerHTML = '';
-
-        rows.forEach(row => {
-            tableBody.appendChild(row);
-        });
-    }
-
-    function getValue(row, sortType) {
-        if (sortType === 'sn') {
-            return parseInt(row.querySelector('.sn').textContent);
-        } else if (sortType === 'price') {
-            return parseFloat(row.querySelector('td:nth-child(5)').textContent.replace('$', ''));
-        }
-    }
-

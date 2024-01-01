@@ -235,7 +235,7 @@ aside .side-link.active::before {
     color: #211544;
     background-color: #FDF1DA;
     border: #211544 solid 3px;
-    box-shadow: #211544 0 5px;
+    box-shadow: #211544 0px 5px;
     transition: all 0.2s ease;
 }
 
