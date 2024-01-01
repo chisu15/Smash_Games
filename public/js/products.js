@@ -213,3 +213,16 @@ window.addEventListener("DOMContentLoaded", function () {
 	// ADD LINK TO DETAILS
 
 });
+
+const editBtn1 = document.querySelector("#post-1")
+const editBtn2 = document.querySelector("#post-2")
+const editBtn3 = document.querySelector("#post-3")
+editBtn1.addEventListener("click",() =>{
+	window.location.href="./post-1-edit.html";
+})
+editBtn2.addEventListener("click",() =>{
+	window.location.href="./post-2-edit.html";
+})
+editBtn3.addEventListener("click",() =>{
+	window.location.href="./post-3-edit.html";
+})
