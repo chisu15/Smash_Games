@@ -6,9 +6,22 @@ new Chart(ctx, {
 		labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
 		datasets: [
 			{
-				label: "# of Votes",
-				data: [12, 19, 3, 5, 2, 3],
+				label: "Views",
+				data: [12, 14, 23, 67, 89, 32],
 				borderWidth: 1,
+				backgroundColor: '#FFAAAA',
+			},
+			{
+				label: "Products Revenue",
+				data: [12, 49, 54, 5, 87, 3],
+				borderWidth: 1,
+				backgroundColor: '#B4E37A',
+			},
+			{
+				label: "Games Revenue",
+				data: [12, 32, 12, 23, 67, 53],
+				borderWidth: 1,
+				backgroundColor: '#211544',
 			},
 		],
 	},
